@@ -145,7 +145,7 @@ class DBStorage:
                 order_item.price = cart_item.product.price
                 order_item.order_id = order_id
 
-            self.__session.add_all(order_items)  # Use add_all() to add all objects
+            self.__session.add_all(order_items)
 
             self.save()
             '''
