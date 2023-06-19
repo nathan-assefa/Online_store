@@ -32,7 +32,7 @@ class BaseModel():
 
     def __repr__(self):
         """ Returning the '__str__' result as a standard python expression """
-        return self.__str__()`
+        return self.__str__()
 
     def to_dict(self):
         """
