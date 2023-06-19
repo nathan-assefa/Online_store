@@ -23,3 +23,8 @@ class Product(BaseModel, Base):
             backref='product',
             cascade='all, delete, delete-orphan'
             )
+    cart_items = relationship(
+            'CartItem',
+            backref='product',
+            cascade='all, delete, delete-orphan'
+            )

@@ -91,16 +91,71 @@ class DBStorage:
         else:
             return len(self.all())
 
+    def try_create_order_items(self, user_id, order_id):
+        try:
+            # Retrieve the user's cart items
+            cart_items = (
+                self.__session.query(CartItem)
+                .join(Cart)
+                .filter(Cart.user_id == user_id)
+                .all()
+            )
+
+            print("*****\n", cart_items, "\n*****")
+            print(type(cart_items))
+
+            order_items = []
+            for cart_item in cart_items:
+                order_item = OrderItem(
+                    order_id=order_id,
+                    product_id=cart_item.product_id,
+                    quantity=cart_item.quantity,
+                    price=cart_item.product.price,
+                )
+                order_items.append(order_item)
+
+            self.new(order_items)
+            self.save()
+            print('okay')
+        #except Exception as e:
+            #self.__session.rollback()
+            #print(f"Error creating order items: {e}")
+        finally:
+            self.close()
+
     def retrieve_cart_items(self, user_id):
         try:
             # Retrieve the user's cart items
             cart_items = (
                 self.__session.query(CartItem)
                 .join(Cart)
-                .join(User)
-                .filter(User.user_id == user_id)
+                .filter(Cart.user_id == user_id)
                 .all()
             )
+            #print(len(cart_items))
+            #print(cart_items)
+
+            # Merge the associated Product objects with the session
+            for cart_item in cart_items:
+                self.__session.merge(cart_item.product)
+
+            '''
+                ************* why merge function? *****************
+                The merge function in SQLAlchemy is used to merge the
+                state of detached objects into the session, allowing
+                updates to be synchronized with the database
+
+                it mainly resolves the error message "the parent instance
+                (CartItem) is not bound to a session", meaning this error
+                typically occurs when you're trying to access a lazy-loaded
+                attribute outside of an active session.
+
+                All in all, the merge function is used here since the
+                'cart_item.product' is going to be used in other sessions, so
+                by merging it before closing the current session, we can make
+                sure that the 'product' attribute can still be accecced in
+                another session.
+            '''
 
             return cart_items
         except Exception:
@@ -108,27 +163,37 @@ class DBStorage:
 
         finally:
             self.close()
+    
 
     def create_order_items(self, user_id, order_id):
         try:
             cart_items = self.retrieve_cart_items(user_id)
             order_items = []
             for cart_item in cart_items:
-                order_item = OrderItem(
-                    order_id=order_id,
-                    product_id=cart_item.product_id,
-                    quantity=cart_item.quantity,
-                    price=cart_item.product.price * cart_item.quantity
-                )
+                order_item = OrderItem()
                 order_items.append(order_item)
+            
+            for order_item, cart_item in zip(order_items, cart_items):
+                order_item.quantity = cart_item.quantity
+                order_item.product_id = cart_item.product_id
+                order_item.price = cart_item.product.price
+                order_item.order_id = order_id
 
-            self.new(order_items)
+            self.__session.add_all(order_items)  # Use add_all() to add all objects
+
             self.save()
-        except Exception:
-            pass
+            '''
+                 ******************why zip function?**************
+                 the zip() function is used to iterate over both order_items and
+                 cart_items simultaneously, allowing you to assign the corresponding
+                 values to the order_item attributes.
+            '''
+        except Exception as e:
+            print(e)
 
         finally:
             self.close()
+
 
     def total_price(self, user_id):
         try:
