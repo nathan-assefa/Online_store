@@ -91,38 +91,6 @@ class DBStorage:
         else:
             return len(self.all())
 
-    def try_create_order_items(self, user_id, order_id):
-        try:
-            # Retrieve the user's cart items
-            cart_items = (
-                self.__session.query(CartItem)
-                .join(Cart)
-                .filter(Cart.user_id == user_id)
-                .all()
-            )
-
-            print("*****\n", cart_items, "\n*****")
-            print(type(cart_items))
-
-            order_items = []
-            for cart_item in cart_items:
-                order_item = OrderItem(
-                    order_id=order_id,
-                    product_id=cart_item.product_id,
-                    quantity=cart_item.quantity,
-                    price=cart_item.product.price,
-                )
-                order_items.append(order_item)
-
-            self.new(order_items)
-            self.save()
-            print('okay')
-        #except Exception as e:
-            #self.__session.rollback()
-            #print(f"Error creating order items: {e}")
-        finally:
-            self.close()
-
     def retrieve_cart_items(self, user_id):
         try:
             # Retrieve the user's cart items
@@ -132,8 +100,6 @@ class DBStorage:
                 .filter(Cart.user_id == user_id)
                 .all()
             )
-            #print(len(cart_items))
-            #print(cart_items)
 
             # Merge the associated Product objects with the session
             for cart_item in cart_items:
