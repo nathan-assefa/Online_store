@@ -34,6 +34,12 @@ class BaseModel():
         """ Returning the '__str__' result as a standard python expression """
         return self.__str__()
 
+    def save(self):
+        """ Saving to the file """
+        self.created_at = datetime.now()
+        models.storage.new(self)
+        models.storage.save()
+
     def to_dict(self):
         """
             extracting the attributes of the BaseModel object,
@@ -71,3 +77,8 @@ class BaseModel():
         In that case, the resulting dictionary would only contain the additional
         key-value pairs we explicitly include in the return statement.
     """
+
+    def delete(self):
+        models.storage.delete(self)
+
+
