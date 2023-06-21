@@ -129,9 +129,9 @@ class HBNBCommand(cmd.Cmd):
                 storage.save()
         except Exception as e:
             print(e)
-
+    
     def do_all(self, arg):
-        """Prints all the instances"""
+        #Prints all the instances
         try:
             arguments = arg.split()
             objects = storage.all()
@@ -154,7 +154,7 @@ class HBNBCommand(cmd.Cmd):
             print(e)
     
     def do_count(self, line):
-        """To count instances of the same class"""
+        #To count instances of the same class
         from_fileClass = storage.all()
         arg = line.split()
         total = 0
