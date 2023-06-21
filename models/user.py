@@ -20,3 +20,13 @@ class User(BaseModel, Base):
             backref='user',
             cascade='all, delete, delete-orphan'
             )
+    carts = relationship(
+            'Cart',
+            backref='user',
+            cascade='all, delete, delete-orphan'
+            )
+    orders = relationship(
+            'Order',
+            backref='user',
+            cascade='all, delete, delete-orphan'
+            )
