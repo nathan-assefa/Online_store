@@ -1,0 +1,417 @@
+{
+    "dressings": [
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 27.55,
+            "description": "100% WATERPROOF - lightweight, packable 100% Polypropylene. Adjustable, tuck away hood with E-Z push cord locks, front zip with snap down storm flap for reliable waterproof protection",
+            "type": "dressing",
+            "url": [
+                "https://m.media-amazon.com/images/I/71UXPOp2wbL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/81gTmnpyjGL._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71qtmUjoR8L._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/91t3+vS3DJL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/81YNOQlofqL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 41.87,
+            "description": "CLASSIC FIT. Made with comfort in mind, this relaxed fit classic denim jacket can be worn alone or with layers on cooler days. With room through the torso, you won't feel restricted in movement",
+            "type": "dressing",
+            "url": [
+                "https://m.media-amazon.com/images/I/71k8LD845OL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/71k8LD845OL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/816XDzbyLjL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/815he8w3R+L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/610sVN7mZ2S._AC_SX522._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "female",
+            "price": 30.98,
+            "description": "Full zip up closure with pockets",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/610hMjFK9DL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61AznaDWueL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61x0RHdZYML._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61-UuuM2byL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71DQDM2CYTL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jecket",
+            "gender": "female",
+            "price": 35.44,
+            "description": "Zipper closure, Hand Wash Only, 1000MM fabric waterproof rating, 1000G/M2 fabric breathability rating",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/61TfkIlsPdL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61Hao0zNDrL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61CxCKixOdL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/6122Tc-907L._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71b1RNdO+jL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 44.2,
+            "description": "SOFT FABRIC: This Columbia Men's Steens Mountain Full Zip 2.0 Fleece Jacket is crafted of ultra-soft 100% polyester MTR filament fleece for the perfect amount of warmth",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/71C1ZyHWroL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71cQPh7ahML._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/613Sw3ufZCL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71I7Dl1GSnL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71SfS9mFmmL._AC_UX466_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "female",
+            "price": 42.88,
+            "description": "100% Cotton, imported, and Snap closure",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/91Wrk-ME8gL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71GPZzr-vsL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/918xsyfY31L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/91xuVRMPJtL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/91LyHZGpcfL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 5.33,
+            "description": "%100 Cotton, taped neck and shoulders",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/713k3iW5ciL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/7172RW+0uaL._AC_UX425_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 4.99,
+            "description": "Lightweight cotton blend provides premium softness wash after wash",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/81ICfMUsJ3L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81HCr7u0c+L._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "female",
+            "price": 6.54,
+            "description": "SLUB COTTON – 100 percent cotton jersey has uneven, knotty finish that is soft to the touch. (Grey heather is a cotton/rayon/polyester blend.)",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/81U97fviCDL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/716wRrjIGlL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81xpDKxGXZL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "female",
+            "price": 7.52,
+            "description": "QUALITY FABRIC. Hanes Perfect-T short-sleeve T-shirt is crafted from lightweight, ring-spun 100% cotton. Sourced American farms, the pre-shrunk cotton fabric feels as good as it looks.",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/919Hht2azRL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81XhRT3l8yL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 9.84,
+            "description": "Machine Wash Warm Gentle Cycle. Colors Separately. Only Non-Chlorine Bleach When Needed. Tumble Dry Low. Do not use fabric softener",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/71TnkWI2QwL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61XRnO1N0nL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/713VGdjL60L._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61NxWlAdrpL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71aq32ToyGL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 21.98,
+            "description": "Rapid-dry, interlock jersey knit wicks away moisture to keep you cool",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/61lgqzzXNcL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61gj0Fw-6HL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/619g6AqwGeL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61RTHleu6LL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 16.22,
+            "description": "Made in USA or Imported, button closure",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/51TGAXFcpYL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51bQ0ph8akL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 15.98,
+            "description": "Fashion meets function: Style these dress pants with; a camisole for women, blouse, blazer, short-sleeve shirts for women, a sweater, turtleneck-women and a variety of button-down shirts; or for a more casual look, wear these pants for women with a tucked-in t-shirt",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/51lGwBhoHiL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51nhYHXf+FL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51NkWI6GdYL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51spUwY-dRL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 18.98,
+            "description": "Quality comfort: These are the dress pants women love to wear to the office; crafted with our soft fabric blend, these pants are made to emphasize style and comfort",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/81VcfdtNduL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/71U+rTvPiwL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/71-86EnDpiL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61Y0-D0ELVL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "male",
+            "price": 17.23,
+            "description": "100% Wool",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/71c8-ZCx0jL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51Pk8mp2WjL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/61DYIW9HDVL._AC_UX466_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "male",
+            "price": 19.88,
+            "description": "A True Performance Product",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/71McBmzgXVL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/718Zj3adZ0L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/711Y9xiUiHL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71KPRLiRx+L._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71vscgWl+qS._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 16.22,
+            "description": "Added stretch for maximum comfort and enhanced movement, contour pouch creates a flattering and smooth shape",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/518Yz8-6bNL._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71SXXlcF9eL._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/5120h68MVTL._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71gVJapRBML._AC_UX679_.jpg",
+                "https://m.media-amazon.com/images/I/71yug3GvlHL._MCnd_AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 19.22,
+            "description": "Block the Burn UPF 50+ delivers optimal sun protection so you can swim or lounge worry free.",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/61QYtjy--kL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/71EDbHLemlL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/51VtkoRFH4S._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71VkSetV+yL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 18.11,
+            "description": "BETAWAVE BOARD SHORTS: Take to the beach in the first ever board short equipped with the BallPark Pouch to keep you comfortable and supported both in and out of the water.",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/61PeLG59nnL._AC_UX385_.jpg",
+                "https://m.media-amazon.com/images/I/81poAEn1TnL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/61iOfz0c9VS._AC_UX425_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "female",
+            "price": 17.44,
+            "description": "Body; Woven: 100% Polyester, Trim: 82% Nylon - 18% Chlorine Resist Spandex",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/510gvQ8WX+L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/51sWSEHMT1L._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/41l8vBfYADL._AC_UX385_.jpg"
+            ]
+        },
+        {
+            "name": "bra",
+            "gender": "female",
+            "price": 13.22,
+            "description": "Made with super-soft brushed fabric for incredible comfort",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/91CdSCIxNZL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/81JmWLdrztL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71XxUE-nVjL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91prscseYNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91gzMPf+1+L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91prscseYNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71LdGWdDVxL._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "suit",
+            "gender": "male",
+            "price": 14.55,
+            "description": "SUIT PANT: From the comfort you know and love. The J.M. Haggar suit collection checks all of the boxes. Featuring a hidden expandable waistband, hook and bar closure, off seam front pockets, single welt back pockets in a classic fit flat front silhouette.",
+            "type": "dressings",
+            "url": [
+                "https://m.media-amazon.com/images/I/61jWKaM8oGL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61Yqi4wiDuL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51CyFM9uLGL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61b98tZQXaL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71WQ+VziSNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61oBxhoHT3L._AC_UL320_.jpg"
+            ]
+        }
+    ],
+    "jewelry ": [
+        {
+            "name": "necklaces",
+            "price": 54.55,
+            "description": "Versatile: A style made for whatever’s on your schedule that day. Pair it with your favorite cocktail dress or a casual pair of jeans – either way, this necklace is sure to shine.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/51dSKjL6BxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71r7eWuCsaL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71RxQAwZj2L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71SF03OXgxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/81U64nztmhL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51+WXQq19OL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61Yaayuf31L._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 40.44,
+            "description": "Dangle earrings featuring bow and delicate chain with clear lucite heart drop embellished with mixed multi-colored stones. Earrings are set in light copper-tone metal with a lever back closure.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/910978fCS5L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/712m3KgbW6L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/91O92vvXdFL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 45.22,
+            "description": "Small heart stud earrings embellished with delicate black stone accents. Earrings are set in black metal with a post back closure.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/71iWJOlcRcL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61zhtolx8lL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71ZSeQAbeGL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/31HF8MBXrwL._QL70_FMwebp_.jpg",
+                "https://m.media-amazon.com/images/I/81ENSkjPeDL._SY500_.jpg",
+                "https://m.media-amazon.com/images/I/71JZza+8-UL._SY800_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 67,
+            "description": "Sterling silver and shimmering moonstone accentuate each other perfectly, quiet sophistication with mystic femininity; The “woman in the moon”",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/81GeV6s6M9L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91FCvASH7xL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71GZmpWqjHL._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "necklaces",
+            "price": 10,
+            "description": "Refined chain necklace adorned with vibrant pink roses and glistening stones at front. Necklace has an adjustable lobster clasp closure. Made from polished metal, glass and plastic.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/71skpkypBML._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/710cDAXoLWL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/51DSl4UAfIL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51BIvW0wX+L._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "ring",
+            "price": 28.88,
+            "description": "PURE 925 STERLING SILVER — Crafted to stand the test of time. Sterling Silver is 92.5% silver, mixed with alloys to add strength and durability.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/61hzPBgWsvL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61R1UtYaYUL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "ring",
+            "price": 11.12,
+            "description": "Elegant design, exquisite and clear, exudes a simple and simple atmosphere. No one will hide this excitement after receiving the gift.",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/41hB0jk5MxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51WeeWb1IsL._AC_.jpg"
+            ]
+        },
+        {
+            "name": "watche",
+            "price": 24.21,
+            "description": "Adjustable black & brown 20 millimeter genuine leather and fabric strap fits up to 8-inch wrist circumference",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/51TFmMUGF1L._AC_.jpg",
+                "https://m.media-amazon.com/images/I/91AI4yCnLBL._AC_SY679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71pxAQkpv2L._AC_SX679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/51TFmMUGF1L._AC_.jpg",
+                "https://m.media-amazon.com/images/I/91+vc+hbYZL._AC_SY679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71uaqiNBzoS._AC_SX679._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "charm",
+            "price": 55,
+            "description": "Jewelry for love: channel your power with this alex and ani pineapple charm bangle, a constant reminder that you have a welcoming heart",
+            "type": "jewelry ",
+            "url": [
+                "https://m.media-amazon.com/images/I/71BPhiugJZL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71tX4ptRCXL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71U3VmbxAEL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61i-JdC0T4L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61uS79x9wUL._AC_UL320_.jpg"
+            ]
+        }
+    ]
+}
