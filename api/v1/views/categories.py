@@ -57,8 +57,8 @@ def category_post():
     if "name" not in category.keys():
         return jsonify({"error": "Missing Name"}), 400
 
-    elif "quantity" not in category.keys():
-        return jsonify({"error": "Missing Quantity"}), 400
+    #elif "quantity" not in category.keys():
+        #return jsonify({"error": "Missing Quantity"}), 400
 
     # here send the new created category to the database and  commit
     created_category = Category(**request.get_json())
