@@ -13,6 +13,7 @@ from models.cart_item import CartItem
 from models.order import Order
 from models.order_item import OrderItem
 from models.review import Review
+from models.url import Url
 
 
 class_names = {
@@ -24,7 +25,8 @@ class_names = {
     "Cart": Cart,
     "CartItem": CartItem,
     "Order": Order,
-    "OrderItem": OrderItem
+    "OrderItem": OrderItem,
+    "Url": Url
 }
 
 

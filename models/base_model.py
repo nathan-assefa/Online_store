@@ -20,9 +20,18 @@ class BaseModel():
     updated_at = Column(DateTime, default=datetime.utcnow(), nullable=False)
 
     def __init__(self, *args, **kwargs):
-        self.id = str(uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        if kwargs:
+            _format = '%Y-%m-%dT%H:%M:%S.%f'
+            for key, value in kwargs.items():
+                if not key == '__class__':
+                    setattr(self, key, value)
+                    if key == 'created_at' or key == 'updated_at':
+                        setattr(self, key, datetime.strptime(value, _format))
+
+        if 'id' not in kwargs:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
 
     def __str__(self):
         """ Returning the instance in user friendly way """

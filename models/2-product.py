@@ -26,6 +26,16 @@ class Product(BaseModel, Base):
     cart_items = relationship(
         "CartItem", backref="product", cascade="all, delete, delete-orphan"
     )
-    urls = relationship(
-        "Url", backref="product", cascade="all, delete, delete-orphan"
+
+
+# Define the event listener function
+@event.listens_for(Product, 'after_insert')
+@event.listens_for(Product, 'after_delete')
+def update_category_quantity(mapper, connection, target):
+    category = target.category
+    category.quantity = len(category.products)
+    connection.execute(
+        Category.__table__.update().where(
+            Category.id == category.id).values(quantity=category.quantity
+                )
     )

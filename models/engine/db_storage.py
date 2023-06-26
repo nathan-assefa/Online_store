@@ -11,6 +11,7 @@ from models.cart import Cart
 from models.cart_item import CartItem
 from models.order import Order
 from models.order_item import OrderItem
+from models.url import Url
 from sqlalchemy import create_engine
 from os import getenv
 
@@ -21,7 +22,10 @@ class_names = [
         Product,
         Review,
         Cart,
-        CartItem
+        CartItem,
+        Order,
+        OrderItem,
+        Url
         ]
 
 
@@ -46,34 +50,25 @@ class DBStorage:
         if ONLINE_STORE_ENV == "test":
             Base.metadata.drop_all(self.__engine)
 
-    def create_order_items(self, user_id, order_id):
-        try:
-            cart_items = self.retrieve_cart_items(user_id)
-            order_items = []
-            for cart_item in cart_items:
-                order_item = OrderItem()
-                order_items.append(order_item)
+    def all(self, cls=None):
+        # let us first compile a list of class so that we
+        # query via loop
+        query_classes = class_names if not cls else [cls]
 
-            for order_item, cart_item in zip(order_items, cart_items):
-                order_item.quantity = cart_item.quantity
-                order_item.product_id = cart_item.product_id
-                order_item.price = cart_item.product.price
-                order_item.order_id = order_id
+        # making query for each class using list comprehension
 
-            self.__session.add_all(order_items)  # Use add_all() to add all objects
+        list_obj = [
+                obj for query_class in query_classes
+                for obj in self.__session.query(query_class)
+                ]
 
-            self.save()
-            '''
-                 ******************why zip function?**************
-                 the zip() function is used to iterate over both order_items and
-                 cart_items simultaneously, allowing you to assign the corresponding
-                 values to the order_item attributes.
-            '''
-        except Exception as e:
-            print(e)
+        return {f"{type(obj).__name__}.{obj.id}": obj for obj in list_obj}
 
-        finally:
-            self.close()
+    def new(self, obj):
+        self.__session.add(obj)
+
+    def save(self):
+        self.__session.commit()
 
     def close(self):
         self.__session.close()
@@ -100,25 +95,6 @@ class DBStorage:
         else:
             return len(self.all())
 
-    def all(self, cls=None):
-        # let us first compile a list of class so that we
-        # query via loop
-        query_classes = class_names if not cls else [cls]
-
-        # making query for each class using list comprehension
-
-        list_obj = [
-                obj for query_class in query_classes
-                for obj in self.__session.query(query_class)
-                ]
-
-        return {f"{type(obj).__name__}.{obj.id}": obj for obj in list_obj}
-
-    def new(self, obj):
-        self.__session.add(obj)
-
-    def save(self):
-        self.__session.commit()
 
     def retrieve_cart_items(self, user_id):
         try:
@@ -161,6 +137,38 @@ class DBStorage:
         finally:
             self.close()
     
+
+    def create_order_items(self, user_id, order_id):
+        try:
+            cart_items = self.retrieve_cart_items(user_id)
+            order_items = []
+            for cart_item in cart_items:
+                order_item = OrderItem()
+                order_items.append(order_item)
+            
+            for order_item, cart_item in zip(order_items, cart_items):
+                order_item.quantity = cart_item.quantity
+                order_item.product_id = cart_item.product_id
+                order_item.price = cart_item.product.price
+                order_item.order_id = order_id
+
+            self.__session.add_all(order_items)
+
+            self.save()
+            return(order_item.to_dict())
+            '''
+                 ******************why zip function?**************
+                 the zip() function is used to iterate over both order_items and
+                 cart_items simultaneously, allowing you to assign the corresponding
+                 values to the order_item attributes.
+            '''
+        #except Exception as e:
+            #print(e)
+
+        finally:
+            self.close()
+
+
     def total_price(self, user_id):
         try:
             cart_items = self.retrieve_cart_items(user_id)

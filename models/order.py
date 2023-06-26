@@ -13,12 +13,13 @@ class Order(BaseModel, Base):
     __tablename__ = 'orders'
 
     order_date = Column(DateTime, default=datetime.utcnow(), nullable=False)
+    status = Column(String(60), default='active')
     user_id = Column(
             String(60),
             ForeignKey('users.id', ondelete='CASCADE'),
             nullable=False
             )
-    order_itmes = relationship(
+    order_items = relationship(
             'OrderItem',
             backref='order',
             cascade = "all, delete, delete-orphan"
