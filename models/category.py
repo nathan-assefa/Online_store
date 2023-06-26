@@ -12,7 +12,7 @@ class Category(BaseModel, Base):
     __tablename__ = 'categories'
    
     name = Column(String(128), nullable=False)
-    quantity = Column(Integer, nullable=False)
+    #quantity = Column(Integer, nullable=False)
     products = relationship(
             'Product',
             backref='category',
