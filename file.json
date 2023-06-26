@@ -7,6 +7,7 @@
             "description": "100% WATERPROOF - lightweight, packable 100% Polypropylene. Adjustable, tuck away hood with E-Z push cord locks, front zip with snap down storm flap for reliable waterproof protection",
             "type": "dressing",
             "url": [
+		"https://s.alicdn.com/@sc04/kf/A752cdf8e7c564b9a8db277f0376524f8V.jpg_480x480.jpg",
                 "https://m.media-amazon.com/images/I/71UXPOp2wbL._AC_UX522_.jpg",
                 "https://m.media-amazon.com/images/I/81gTmnpyjGL._AC_SX522._SX._UX._SY._UY_.jpg",
                 "https://m.media-amazon.com/images/I/71qtmUjoR8L._AC_SX522._SX._UX._SY._UY_.jpg",
@@ -299,6 +300,18 @@
                 "https://m.media-amazon.com/images/I/61b98tZQXaL._AC_UL320_.jpg",
                 "https://m.media-amazon.com/images/I/71WQ+VziSNL._AC_UL320_.jpg",
                 "https://m.media-amazon.com/images/I/61oBxhoHT3L._AC_UL320_.jpg"
+            ]
+        },
+	{
+            "name": "dress",
+            "gender": "female",
+            "price": 17.23,
+            "description": "100% Wool",
+            "type": "dressings",
+            "url": [
+		"https://s.alicdn.com/@sc04/kf/H85b19651617f438b8b2f8d5ec9d2a0aed.jpg_480x480.jpg",
+		"https://s.alicdn.com/@sc04/kf/Hf1453e42a2164a129084ff9edc3d5303y.jpg_480x480.jpg",
+		"https://s.alicdn.com/@sc04/kf/Hbcd46e14b32c4053b375fa566704d6c5I.jpg_480x480.jpg"
             ]
         }
     ],

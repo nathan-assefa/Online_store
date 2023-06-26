@@ -4,9 +4,9 @@ import json
 from sys import argv
 
 with open(argv[1]) as file_name:
-    f = json.load(file_name)
-    for category in f:
-        if category == 'tech':
-            for item in f[category]:
-                print(item['name'])
+    categories = json.load(file_name)
+    for category in categories:
+        #if category == 'dressings':
+        for item in categories[category]:
+            print(item['name'])
 
