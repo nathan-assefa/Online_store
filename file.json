@@ -1,0 +1,960 @@
+{
+    "dressings": [
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 27.55,
+            "description": "100% WATERPROOF - lightweight, packable 100% Polypropylene. Adjustable, tuck away hood with E-Z push cord locks, front zip with snap down storm flap for reliable waterproof protection",
+            "url": [
+                "https://m.media-amazon.com/images/I/71UXPOp2wbL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/81gTmnpyjGL._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71qtmUjoR8L._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/91t3+vS3DJL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/81YNOQlofqL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 41.87,
+            "description": "CLASSIC FIT. Made with comfort in mind, this relaxed fit classic denim jacket can be worn alone or with layers on cooler days. With room through the torso, you won't feel restricted in movement",
+            "url": [
+                "https://m.media-amazon.com/images/I/71k8LD845OL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/71k8LD845OL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/816XDzbyLjL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/815he8w3R+L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/610sVN7mZ2S._AC_SX522._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "female",
+            "price": 30.98,
+            "description": "Full zip up closure with pockets",
+            "url": [
+                "https://m.media-amazon.com/images/I/610hMjFK9DL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61AznaDWueL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61x0RHdZYML._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61-UuuM2byL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71DQDM2CYTL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "female",
+            "price": 35.44,
+            "description": "Zipper closure, Hand Wash Only, 1000MM fabric waterproof rating, 1000G/M2 fabric breathability rating",
+            "url": [
+                "https://m.media-amazon.com/images/I/61TfkIlsPdL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61Hao0zNDrL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61CxCKixOdL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/6122Tc-907L._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71b1RNdO+jL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "male",
+            "price": 44.2,
+            "description": "SOFT FABRIC: This Columbia Men's Steens Mountain Full Zip 2.0 Fleece Jacket is crafted of ultra-soft 100% polyester MTR filament fleece for the perfect amount of warmth",
+            "url": [
+                "https://m.media-amazon.com/images/I/71C1ZyHWroL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71cQPh7ahML._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/613Sw3ufZCL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71I7Dl1GSnL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71SfS9mFmmL._AC_UX466_.jpg"
+            ]
+        },
+        {
+            "name": "jacket",
+            "gender": "female",
+            "price": 42.88,
+            "description": "100% Cotton, imported, and Snap closure",
+            "url": [
+                "https://m.media-amazon.com/images/I/91Wrk-ME8gL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71GPZzr-vsL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/918xsyfY31L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/91xuVRMPJtL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/91LyHZGpcfL._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 5.33,
+            "description": "%100 Cotton, taped neck and shoulders",
+            "url": [
+                "https://m.media-amazon.com/images/I/713k3iW5ciL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/7172RW+0uaL._AC_UX425_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 4.99,
+            "description": "Lightweight cotton blend provides premium softness wash after wash",
+            "url": [
+                "https://m.media-amazon.com/images/I/81ICfMUsJ3L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81HCr7u0c+L._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "female",
+            "price": 6.54,
+            "description": "SLUB COTTON – 100 percent cotton jersey has uneven, knotty finish that is soft to the touch. (Grey heather is a cotton/rayon/polyester blend.)",
+            "url": [
+                "https://m.media-amazon.com/images/I/81U97fviCDL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/716wRrjIGlL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81xpDKxGXZL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "female",
+            "price": 7.52,
+            "description": "QUALITY FABRIC. Hanes Perfect-T short-sleeve T-shirt is crafted from lightweight, ring-spun 100% cotton. Sourced American farms, the pre-shrunk cotton fabric feels as good as it looks.",
+            "url": [
+                "https://m.media-amazon.com/images/I/919Hht2azRL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/81XhRT3l8yL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 9.84,
+            "description": "Machine Wash Warm Gentle Cycle. Colors Separately. Only Non-Chlorine Bleach When Needed. Tumble Dry Low. Do not use fabric softener",
+            "url": [
+                "https://m.media-amazon.com/images/I/71TnkWI2QwL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61XRnO1N0nL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/713VGdjL60L._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61NxWlAdrpL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71aq32ToyGL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "t-shirt",
+            "gender": "male",
+            "price": 21.98,
+            "description": "Rapid-dry, interlock jersey knit wicks away moisture to keep you cool",
+            "url": [
+                "https://m.media-amazon.com/images/I/61lgqzzXNcL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61gj0Fw-6HL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/619g6AqwGeL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61RTHleu6LL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 16.22,
+            "description": "Made in USA or Imported, button closure",
+            "url": [
+                "https://m.media-amazon.com/images/I/51TGAXFcpYL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51bQ0ph8akL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 15.98,
+            "description": "Fashion meets function: Style these dress pants with; a camisole for women, blouse, blazer, short-sleeve shirts for women, a sweater, turtleneck-women and a variety of button-down shirts; or for a more casual look, wear these pants for women with a tucked-in t-shirt",
+            "url": [
+                "https://m.media-amazon.com/images/I/51lGwBhoHiL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51nhYHXf+FL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51NkWI6GdYL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51spUwY-dRL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "female",
+            "price": 18.98,
+            "description": "Quality comfort: These are the dress pants women love to wear to the office; crafted with our soft fabric blend, these pants are made to emphasize style and comfort",
+            "url": [
+                "https://m.media-amazon.com/images/I/81VcfdtNduL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/71U+rTvPiwL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/71-86EnDpiL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61Y0-D0ELVL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "male",
+            "price": 17.23,
+            "description": "100% Wool",
+            "url": [
+                "https://m.media-amazon.com/images/I/71c8-ZCx0jL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/51Pk8mp2WjL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/61DYIW9HDVL._AC_UX466_.jpg"
+            ]
+        },
+        {
+            "name": "trouser",
+            "gender": "male",
+            "price": 19.88,
+            "description": "A True Performance Product",
+            "url": [
+                "https://m.media-amazon.com/images/I/71McBmzgXVL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/718Zj3adZ0L._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/711Y9xiUiHL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71KPRLiRx+L._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71vscgWl+qS._AC_SY500._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 16.22,
+            "description": "Added stretch for maximum comfort and enhanced movement, contour pouch creates a flattering and smooth shape",
+            "url": [
+                "https://m.media-amazon.com/images/I/518Yz8-6bNL._AC_SX522._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71SXXlcF9eL._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/5120h68MVTL._AC_SX425._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71gVJapRBML._AC_UX679_.jpg",
+                "https://m.media-amazon.com/images/I/71yug3GvlHL._MCnd_AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 19.22,
+            "description": "Block the Burn UPF 50+ delivers optimal sun protection so you can swim or lounge worry free.",
+            "url": [
+                "https://m.media-amazon.com/images/I/61QYtjy--kL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/71EDbHLemlL._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/51VtkoRFH4S._AC_UX466_.jpg",
+                "https://m.media-amazon.com/images/I/71VkSetV+yL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "male",
+            "price": 18.11,
+            "description": "BETAWAVE BOARD SHORTS: Take to the beach in the first ever board short equipped with the BallPark Pouch to keep you comfortable and supported both in and out of the water.",
+            "url": [
+                "https://m.media-amazon.com/images/I/61PeLG59nnL._AC_UX385_.jpg",
+                "https://m.media-amazon.com/images/I/81poAEn1TnL._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/61iOfz0c9VS._AC_UX425_.jpg"
+            ]
+        },
+        {
+            "name": "trunks",
+            "gender": "female",
+            "price": 17.44,
+            "description": "Body; Woven: 100% Polyester, Trim: 82% Nylon - 18% Chlorine Resist Spandex",
+            "url": [
+                "https://m.media-amazon.com/images/I/510gvQ8WX+L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/51sWSEHMT1L._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/41l8vBfYADL._AC_UX385_.jpg"
+            ]
+        },
+        {
+            "name": "bra",
+            "gender": "female",
+            "price": 13.22,
+            "description": "Made with super-soft brushed fabric for incredible comfort",
+            "url": [
+                "https://m.media-amazon.com/images/I/91CdSCIxNZL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/81JmWLdrztL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71XxUE-nVjL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91prscseYNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91gzMPf+1+L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91prscseYNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71LdGWdDVxL._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "suit",
+            "gender": "male",
+            "price": 14.55,
+            "description": "SUIT PANT: From the comfort you know and love. The J.M. Haggar suit collection checks all of the boxes. Featuring a hidden expandable waistband, hook and bar closure, off seam front pockets, single welt back pockets in a classic fit flat front silhouette.",
+            "url": [
+                "https://m.media-amazon.com/images/I/61jWKaM8oGL._AC_UX522_.jpg",
+                "https://m.media-amazon.com/images/I/61Yqi4wiDuL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51CyFM9uLGL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61b98tZQXaL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71WQ+VziSNL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61oBxhoHT3L._AC_UL320_.jpg"
+            ]
+        }
+    ],
+    "jewelry": [
+        {
+            "name": "necklaces",
+            "price": 54.55,
+            "description": "Versatile: A style made for whatever’s on your schedule that day. Pair it with your favorite cocktail dress or a casual pair of jeans – either way, this necklace is sure to shine.",
+            "url": [
+                "https://m.media-amazon.com/images/I/51dSKjL6BxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71r7eWuCsaL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71RxQAwZj2L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/71SF03OXgxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/81U64nztmhL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51+WXQq19OL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61Yaayuf31L._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 40.44,
+            "description": "Dangle earrings featuring bow and delicate chain with clear lucite heart drop embellished with mixed multi-colored stones. Earrings are set in light copper-tone metal with a lever back closure.",
+            "url": [
+                "https://m.media-amazon.com/images/I/910978fCS5L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/712m3KgbW6L._AC_UX425_.jpg",
+                "https://m.media-amazon.com/images/I/91O92vvXdFL._AC_UX522_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 45.22,
+            "description": "Small heart stud earrings embellished with delicate black stone accents. Earrings are set in black metal with a post back closure.",
+            "url": [
+                "https://m.media-amazon.com/images/I/71iWJOlcRcL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61zhtolx8lL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71ZSeQAbeGL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/31HF8MBXrwL._QL70_FMwebp_.jpg",
+                "https://m.media-amazon.com/images/I/81ENSkjPeDL._SY500_.jpg",
+                "https://m.media-amazon.com/images/I/71JZza+8-UL._SY800_.jpg"
+            ]
+        },
+        {
+            "name": "earring",
+            "price": 67,
+            "description": "Sterling silver and shimmering moonstone accentuate each other perfectly, quiet sophistication with mystic femininity; The “woman in the moon”",
+            "url": [
+                "https://m.media-amazon.com/images/I/81GeV6s6M9L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/91FCvASH7xL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71GZmpWqjHL._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "necklaces",
+            "price": 10,
+            "description": "Refined chain necklace adorned with vibrant pink roses and glistening stones at front. Necklace has an adjustable lobster clasp closure. Made from polished metal, glass and plastic.",
+            "url": [
+                "https://m.media-amazon.com/images/I/71skpkypBML._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/710cDAXoLWL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/51DSl4UAfIL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51BIvW0wX+L._AC_UL320_.jpg"
+            ]
+        },
+        {
+            "name": "ring",
+            "price": 28.88,
+            "description": "PURE 925 STERLING SILVER — Crafted to stand the test of time. Sterling Silver is 92.5% silver, mixed with alloys to add strength and durability.",
+            "url": [
+                "https://m.media-amazon.com/images/I/61hzPBgWsvL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/61R1UtYaYUL._AC_UY500_.jpg"
+            ]
+        },
+        {
+            "name": "ring",
+            "price": 11.12,
+            "description": "Elegant design, exquisite and clear, exudes a simple and simple atmosphere. No one will hide this excitement after receiving the gift.",
+            "url": [
+                "https://m.media-amazon.com/images/I/41hB0jk5MxL._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/51WeeWb1IsL._AC_.jpg"
+            ]
+        },
+        {
+            "name": "watche",
+            "price": 24.21,
+            "description": "Adjustable black & brown 20 millimeter genuine leather and fabric strap fits up to 8-inch wrist circumference",
+            "url": [
+                "https://m.media-amazon.com/images/I/51TFmMUGF1L._AC_.jpg",
+                "https://m.media-amazon.com/images/I/91AI4yCnLBL._AC_SY679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71pxAQkpv2L._AC_SX679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/51TFmMUGF1L._AC_.jpg",
+                "https://m.media-amazon.com/images/I/91+vc+hbYZL._AC_SY679._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71uaqiNBzoS._AC_SX679._SX._UX._SY._UY_.jpg"
+            ]
+        },
+        {
+            "name": "charm",
+            "price": 55,
+            "description": "Jewelry for love: channel your power with this alex and ani pineapple charm bangle, a constant reminder that you have a welcoming heart",
+            "url": [
+                "https://m.media-amazon.com/images/I/71BPhiugJZL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71tX4ptRCXL._AC_UY500_.jpg",
+                "https://m.media-amazon.com/images/I/71U3VmbxAEL._AC_SY500._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61i-JdC0T4L._AC_UL320_.jpg",
+                "https://m.media-amazon.com/images/I/61uS79x9wUL._AC_UL320_.jpg"
+            ]
+        }
+    ],
+    "Shoe": [
+        {
+            "name": "adidas Men's Lite Racer Adapt 4.0 Running Shoe",
+            "gender": "male",
+            "price": 42.95,
+            "description": "This product is made with Primegreen, a series of high-performance recycled materials. 50% of upper is recycled content. No virgin polyester.",
+            "url":[
+                "https://m.media-amazon.com/images/I/81cuTtP+n6L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71X-u2nEiHL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71WYok9of-L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71IZGPzG93L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61GTHWrlwFL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "adidas Men's Tech Response 3.0 Golf Shoe",
+            "gender": "male",
+            "price": 45.50,
+            "description": "Polyurethane sole, Regular fit, Textile and synthetic upper, Slow-resilient padding around collar and tongue, Textile lining, Bounce midsole",
+            "url":[
+                "https://m.media-amazon.com/images/I/71J8vzvFilL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/718YQ4BR1CL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61ND8w6ptNL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71mqEQOs+mL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/717IN+tZ3TL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Franco Sarto Women's Carolynn Lug Sole Loafer",
+            "gender": "female",
+            "price": 78.00,
+            "description": "100% Leather, Man Made sole, Shaft measures approximately not_applicable from arch, Heel measures approximately 1.25, Platform measures approximately 0.5 inches, 1.5 inch platform with lug sole elevates these chunky menswear inspired women's loafers.",
+            "url":[
+                "https://m.media-amazon.com/images/I/717fgoNKLkS._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71RfnqZM1iS._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61DONhmIjVS._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/81HINq4uPpS._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71niLkPCleS._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "TOMS Men's Alpargata Loafer Flat",
+            "gender": "female",
+            "price": 36.95,
+            "description": "100% Textile, Rubber sole, Classic Alpargata, Earthwise textile uppers in recycled cotton or heritage canvas, Recycled cotton lining and footbed, Elastic gore for easy fit, Non-removable insole with 50% eco content (25% recycled PU foam, 15% recycled rubber, 10% bio oil)",
+            "url":[
+                "https://m.media-amazon.com/images/I/61lf8BFnoaL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/51jOAz398DL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/51Jl6ZmqQ5L._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61n9ULVO6KL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61HQy8D47fL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Vince Camuto Women's Jesander Buckle Flat Loafer",
+            "gender": "female",
+            "price": 59.99,
+            "description": "Synthetic Rubber sole, Leather Material, Flat - Loafer, Buckle Closure",
+            "url":[
+                "https://m.media-amazon.com/images/I/71LgKhc752L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61LTl1EG6VL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/51RF3hTC0zL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61GiUyKsKYL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61kdMBV6sML._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Skechers Men's Afterburn M. Fit Wonted Loafer",
+            "gender": "male",
+            "price": 47.00,
+            "description": "100% Leather and Synthetic, Imported, Man made sole, Shaft measures approximately low-top from arch, Slip-on Closure, Memory Foam Insole",
+            "url":[
+                "https://m.media-amazon.com/images/I/814JI0Tx6dL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81SZpq2ZaFL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71MaBzbfuaL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/81Fngbi2yzL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81rjL+YM7vL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Skechers Men's Arch Fit Banlin Sneaker",
+            "gender": "male",
+            "price": 59.00,
+            "description": "Synthetic sole, Shaft measures approximately low-top from arch, Not water resistant, Closed Toe, Having solid pattern",
+            "url":[
+                "https://m.media-amazon.com/images/I/71Qlfaq3viL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/714gPa4tctL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61YlI1ghl-L._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/711G4iluNwL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81739AvzTgL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Merrell Women's Siren Edge 3 Hiking Shoe",
+            "gender": "female",
+            "price": 65.92,
+            "description": "Rubber sole, Mesh and TPU upper, Traditional lace closure, Bellows tongue keeps out debris, Breathable mesh lining, Kinetic Fit BASE removable contoured insole for flexible support",
+            "url":[
+                "https://m.media-amazon.com/images/I/714PuFePyBS._AC_SX695._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71U5dgj62RS._AC_SY695._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/61Hv5iLNQBS._AC_SY695._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71VMUooBv-S._AC_SX695._SX._UX._SY._UY_.jpg",
+                "https://m.media-amazon.com/images/I/71BZt84XyGS._AC_SX695._SX._UX._SY._UY_.jpg"
+                ]
+        },
+        {
+            "name": "Clarks Men's Tilden Cap Oxford",
+            "gender": "male",
+            "price": 47.45,
+            "description": "100% Leather, Imported, Thermoplastic Elastomers sole, Heel measures approximately 0.98, These smart mens shoes with a square cap toe toe are crafted from a premium leather",
+            "url":[
+                "https://m.media-amazon.com/images/I/71AA93kzoxL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61z3+HY70qL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61XZthvHa3L._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/8187O4gXUML._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/81XxplTA0nL._AC_UY695_.jpg"
+                ]
+        },
+        {
+            "name": "Easy Spirit Women's Traveltime 498 Clog",
+            "gender": "female",
+            "price": 39.99,
+            "description": "80% Suede, 20% Mesh, Rubber sole, Shaft measures approximately not_applicable from arch, Breathable, lightweight, Durable Lightweight rubber outsole",
+            "url":[
+                "https://m.media-amazon.com/images/I/51yRvmA7YcL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61h+twEpF8S._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61-iymvpDxS._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71uqDWv+aRS._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71srtYmkewS._AC_UY695_.jpg"
+                ]
+        },
+        {
+            "name": "ILLUDE Women's High Heels Open Toe Ankle Strap Stilettos Platform Sexy Party Heeled Sandals – Cake",
+            "gender": "female",
+            "price": 32.99,
+            "description": "Rubber sole, 100% VEGAN: Eco-friendly and in control. Buy these guilt-free, knowing your purchase is making no dent in the environment!, FEMININE DESIGN: The femme yet sleek sandal that will add a fancy flair to any outfit.",
+            "url":[
+                "https://m.media-amazon.com/images/I/71i9eneVniL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61CCrvSSesL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/611rCsCE4lL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61cvgvQFE+L._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71AkqIKmafL._AC_UY695_.jpg"
+                ]
+        },
+        {
+            "name": "Jessica Simpson Women's Jaeya Heeled Sandal",
+            "gender": "female",
+            "price": 65.92,
+            "description": "Rubber sole, Mesh and TPU upper, Traditional lace closure, Bellows tongue keeps out debris, Breathable mesh lining, Kinetic Fit BASE removable contoured insole for flexible support",
+            "url":[
+                "https://m.media-amazon.com/images/I/81-sKek72NL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71+hjk3SYML._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/81dKwDmi5qL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71gaJgPL4jL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81Nwh-sJf9L._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Steve Madden Women's Maxwelle Ankle Boot",
+            "gender": "female",
+            "price": 49.99,
+            "description": "Fabric/Glass/Synthetic, Thermoplastic Elastomers sole, Shaft measures approximately Ankle from arch, Heel measures approximately 4, Boot opening measures approximately 8.75 around, Steve Madden",
+            "url":[
+                "https://m.media-amazon.com/images/I/81OqvlERnZL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71984RN0OeL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61pwkNVg0pL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71OB5xueuFL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/91GDwSlTJHL._AC_UY695_.jpg"
+                ]
+        },
+        {
+            "name": "adidas Unisex-Child Adilette Shower Slides",
+            "gender": "male",
+            "price": 17.95,
+            "description": "100% Synthetic, Rubber sole, Shaft measures approximately 0-6 from arch, Platform measures approximately .5 inches, Lightweight, pillow soft slides that are quick-drying and made for an easy on-and-off",
+            "url":[
+                "https://m.media-amazon.com/images/I/613deQsgFJL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61AsKY+oQ5L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61NQPVbdA8L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71och77GQOL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/7151sxZsSML._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Disney Minnie Mouse Sandals Kids Toddlers | Girls Leopard Animal Print Pink Sliders with Supportive Strap | Pink Summer Shoes Footwear",
+            "gender": "kid",
+            "price": 18.96,
+            "description": "DISNEY MINNIE MOUSE SANDALS FOR GIRLS - Get your little one ready for a season of fun and adventure with these adorable Minnie Mouse sandals. Whether they're strolling through the park or splashing in the water at the beach, these pink sandals are the perfect choice for any occasion.",
+            "url":[
+                "https://m.media-amazon.com/images/I/612LcaTXU+L._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/91u2h1dnINL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/51IQ-x12lCL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61fkgoWGiwL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/51UxVnGwoAL._AC_UY695_.jpg"
+                ]
+        },
+        {
+            "name": "Teva Unisex-Child Y Hurricane XLT 2 Sandal",
+            "gender": "kid",
+            "price": 24.95,
+            "description": "Rubber sole, Quick-dry webbing made from recycled plastic using traceable, verifiable REPREVE polyester yarn by Unifi supports your foot and stands up to abuse",
+            "url":[
+                "https://m.media-amazon.com/images/I/61LeG3f+8-L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/51Qq-3tcVVL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/613MUPzIabL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61kk1fVXWPL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/51E1oMoQoHL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "DADAWEN Girls Sandals Open Toe Cute Flower Soft Princess Flats Dress Sandals Strappy Summer Shoes Toddler/Little Kid/Big Kid",
+            "gender": "kid",
+            "price": 25.95,
+            "description": "Rubber sole, 【COMFORTABLE SANDALS FOR GIRLS】: Our girl flat sandals adopt durable and soft skin-friendly materials. Breathable lining and soft cushioned insole enables all-day comfort, delicate stitching on the insole and cute flower vamp design, slip-resistant & flexible rubber sole ensure your girl safely walking and playing. The super cute toddler girl sandals must be a necessity in this hot weather",
+            "url":[
+                "https://m.media-amazon.com/images/I/71iRZ5GZxHL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61iAmsvAScL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71eURNliuYL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61IwuLrCpKL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/71seXZCNiVL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Quiksilver Men's Carver Suede 3 Point Flip Flop Athletic Sandal",
+            "gender": "male",
+            "price": 24.00,
+            "description": "Rubber sole, Moulded contour midsole with built-in arch, heel, and forefoot support",
+            "url":[
+                "https://m.media-amazon.com/images/I/61KjEwdEHiL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/615b0WFctML._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61B0Z8btP7L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61tNMMvsqyL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/710w8ZxQhfL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Roxy Women's Jasmine Flip Flop Sandal",
+            "gender": "female",
+            "price": 24.00,
+            "description": "Rubber sole, Upper: Multi strap synthetic sandal, Footbed: Soft EVA with etched Roxy script, Outsole: TPR with Roxy heritage floral art",
+            "url":[
+                "https://m.media-amazon.com/images/I/61AJ68gsAjL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/51b0MilmNmL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/51nTdLST-xL._AC_UY695_.jpg",
+                "https://m.media-amazon.com/images/I/61IihwOpt8L._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/61N7eGSZ8OL._AC_UX695_.jpg"
+                ]
+        },
+        {
+            "name": "Teva Men's Pajaro Flip-Flop",
+            "gender": "male",
+            "price": 36.05,
+            "description": "Leather and Textile, Rubber sole, Platform measures approximately 1, Triple-texture thong sandal with sporty outdoor traction and contoured footbed",
+            "url":[
+                "https://m.media-amazon.com/images/I/71Ue0se0QhL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81qF9LbB4ZL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71a6EA47ToL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/71nduOwVEQL._AC_UX695_.jpg",
+                "https://m.media-amazon.com/images/I/81VUXmVJdkL._AC_UX695_.jpg"
+                ]
+        }
+    ],
+    "Tech": [
+        {
+            "name": "Dell 2023 Inspiron 5620 16 FHD+ (1920x1200) Laptop 12th Intel i7-1260P 12-Core 16GB DDR4 1TB NVMe SSD NVIDIA GeForce MX570 Graphics Backlit Keyboard w/Fingerprint Reader WiFi 6E Windows 11 Pro",
+            "price": 1420.00,
+            "description": "Latest 12th Generation Intel Core i7-1260P 12-Core Processor (Up to 4.70 GHz with Intel Turbo Boost Technology, 18 MB Smart cache, 4 Performance + 8 Efficient cores, 16 threads)",
+            "url":[
+                "https://m.media-amazon.com/images/I/61NoSN0Y3SL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51IO2Uu019L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51IO2Uu019L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51zJRYlPSFL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61UgdA9MdeL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Lenovo 2022 Newest Ideapad 3 Laptop, 15.6 HD Touchscreen, 11th Gen Intel Core i3-1115G4 Processor, 8GB DDR4 RAM, 256GB PCIe NVMe SSD, HDMI, Webcam, Wi-Fi 5, Bluetooth, Windows 11 Home, Almond",
+            "price": 1392.00,
+            "description": "【Memory & Storage】Memory is 8GB high-bandwidth RAM to smoothly run multiple applications and browser tabs all at once. Hard Drive is 256GB PCIe Solid State Drive which allows to fast bootup and data transfer, 【Processor】11th Gen Intel Core i3-1115G4 Dual-Core 3.0GHz Processor (6MB Intel Smart Cache, up to 4.10GHz) Intel UHD Graphics",
+            "url":[
+                "https://m.media-amazon.com/images/I/61QGMX0Qy6L._AC_SL1352_.jpg",
+                "https://m.media-amazon.com/images/I/6135Uo47QyL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51iKusdOFTL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61+O7hJ2WgL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61ObgYvS4pL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "HP Spectre x360 2-in-1 Laptop, 15.6 4K UHD Touchscreen, Intel Core i7-8565U Processor up to 4.6GHz, 16GB RAM. 256GB SSD, Backlit Keyboard, Wireless-AC, Windows 10 Home (15.6 Inch, Dark Ash Silver)",
+            "price": 222.33,
+            "description": "NEWEST 8th Generation Intel Core i7-8565U + NVIDIA GeForce MX150 (2GB GDDR5 dedicated), Windows 10 Home 64 - Dark Ash Color, 16 GB DDR4-2400 SDRAM (2 x 8 GB), 512 GB PCIe NVMe M.2 SSD, HP Wide Vision FHD IR Camera with integrated dual array digital microphone",
+            "url":[
+                "https://m.media-amazon.com/images/I/81ZvaBihNsL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81BmB0Mx2rL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81xDoHsXl+L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61wWEtFBJQL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71PUZ9o9U6L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Google Pixel 6a - 5G Android Phone - Unlocked Smartphone with 12 Megapixel Camera and 24-Hour Battery - Sage",
+            "price": 692.00,
+            "description": "Google Pixel 6a adapts to you; it’s super fast and secure and powered by Google Tensor, the first chip designed by Google just for Pixel.Form_factor : Bar.Other camera description:Front,Rear",
+            "url":[
+                "https://m.media-amazon.com/images/I/61dNAU6PgxL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71a1qTPpg-L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71cllz2mLbL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61BENIhgB1L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "OnePlus 11 5G | 16GB RAM+256GB | Eternal Green | US Factory Unlocked Android Smartphone & 11 5G Sandstone Bumper Case Black",
+            "price": 592.00,
+            "description": "Product 1: Free 6 months of Google One and Youtube Premium with purchase of OnePlus 11. (New accounts only for each service to qualify)",
+            "url":[
+                "https://m.media-amazon.com/images/I/41jQGYtio6L._AC_SL1001_.jpg",
+                "https://m.media-amazon.com/images/I/71jvbxyQ2TL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/514rdmWAkAL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61XUv5nLUOL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/41vBY3LXfQL._AC_.jpg"
+                ]
+        },
+        {
+            "name": "SAMSUNG Galaxy Z Fold 4 Cell Phone, Factory Unlocked Android Smartphone, 512GB, Flex Mode, Hands Free Video, Multi Window View, Foldable Display, S Pen Compatible, US Version, Gray Green",
+            "price": 892.00,
+            "description": "FLEX MODE: Free up your hands with Flex Mode on the Galaxy Z Fold4; This smartphone stands on its own so you can take notes during a conference call or follow along with instructional videos in real time",
+            "url":[
+                "https://m.media-amazon.com/images/I/71GO79IeU8L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71eFYMiAodL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51P5Q3RFnGL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/71NsjJ9Hj9L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81QIhlGoi5L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "JLab Go Air Pop True Wireless Bluetooth Earbuds + Charging Case | Teal | Dual Connect | IPX4 Sweat Resistance | Bluetooth 5.1 Connection | 3 EQ Sound Settings Signature, Balanced, Bass Boost",
+            "price": 39.00,
+            "description": "Long Battery Life: GO Air POP features 8+ hours of playtime in each earbud and 24+ extra hours from the charging case (32+ hours total). Return to the case to recharge the buds, and use the integrated USB cable to charge the case.",
+            "url":[
+                "https://m.media-amazon.com/images/I/717ckvXvIvL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61FdL2qx-1L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71gTVrX7NiL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71XdMiImL7L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/8111b3zis2L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Bose QuietComfort 45 Bluetooth Wireless Noise Cancelling Headphones - White Smoke",
+            "price": 300.00,
+            "description": "NOISE CANCELLING WIRELESS HEADPHONES: The perfect balance of quiet, comfort, and sound. Bose uses tiny mics to measure, compare, and react to outside noise, cancelling it with opposite signals. Bluetooth range-up to 9 m (30 feet).",
+            "url":[
+                "https://m.media-amazon.com/images/I/51CHPyFpnoL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51+AZ4oGvqL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71wSoXn0NBL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71Yz2oAit-L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71ymHEkCcNL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Skullcandy Crusher Evo Wireless Over-Ear Bluetooth Headphones for iPhone and Android with Mic / 40 Hour Battery Life / Extra Bass Tech / Best for Music, School, Workouts, and Gaming - Black",
+            "price": 132.00,
+            "description": "Feel the bass tuned to you - Listen to songs the way they were made to be heard. With Audiodo customization the Crusher Evo analyzes your hearing and produces sound specifically for YOU. Adjust the bass with a slide to produce bass you can feel!",
+            "url":[
+                "https://m.media-amazon.com/images/I/71I0lybSq+L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81wkTz-+xAL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71JZSuHSLmL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/91DoVPftAhL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81UdDsOpdAL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Hyperkin RetroN Sq: HD Gaming Console for Game Boy/Color/ Game Boy Advance (Hyper Beach) - Game Boy Advance",
+            "price": 292.00,
+            "description": "Compatible with game boy and game boy Color cartridges via open source software. Compatibility with game boy advance cartridges (beta function), Upscales to 720p 4:3/16:9 Aspect Ratio Switch",
+            "url":[
+                "https://m.media-amazon.com/images/I/71e+i+oD0qL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/713cxz8Z85L._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71bl20Czw3L._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71PefOEriPL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71t84n55GGL._SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Fire-Boltt Talk 2 Pro Bluetooth Calling Smartwatch/1.39 TFT Display with Dual Button/Hands On Voice Assistance/120 Sports Modes/in Built Mic & Speaker/IP68/Compatible with Android iOS/Unisex",
+            "price": 79.95,
+            "description": "【1.39 inch HD Display】- This smartwatch has a 1.39” TFT LCD Full Touch Display with a 2D High Hardness Glass for super protection and a high resolution of 240*240 pixels The watch has 650 NITS Peak Brightness【Full Metal Body】- This watch is long lasting and durable with its metal body feature",
+            "url":[
+                "https://m.media-amazon.com/images/I/61Ej9Rl7PrL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61L5N+0JdwL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/7196Kgq1VSL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71k8xCOlQaL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61LtC+b1z5L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Apple Watch SE (2nd Gen) [GPS 40mm] Smart Watch w/Starlight Aluminum Case & Starlight Sport Band - S/M. Fitness & Sleep Tracker, Crash Detection, Heart Rate Monitor, Retina Display, Water Resistant",
+            "price": 92.00,
+            "description": "WHY APPLE WATCH SE — All the essentials to help you monitor your fitness, keep connected, track your health, and stay safe. Now up to 20 percent faster, with features like Crash Detection and enhanced workout metrics, it’s a better value than ever.",
+            "url":[
+                "https://m.media-amazon.com/images/I/71YdE55GwjL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61cw88QI2pL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/91GkjaDhHoL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71DUz6qs8yL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61IYXIbHsSL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Bose SoundLink Flex Bluetooth Portable Speaker, Wireless Waterproof Speaker for Outdoor Travel - Black",
+            "price": 149.00,
+            "description": "STATE-OF-ART DESIGN: SoundLink Flex outdoor speaker is packed with exclusive technologies and a custom-engineered transducer for deep, clear, and immersive audio at home or on the go",
+            "url":[
+                "https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71jJo+lZkmL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71jJo+lZkmL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/815iFoALdXL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71a7RXguWYL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "JBL Pulse 3 - Wireless Bluetooth Waterproof Speaker - Black",
+            "price": 129.00,
+            "description": "Take your listening experience to the next level with the JBL Pulse 3, The portable, waterproof Bluetooth speaker that combines 360° sound with 360° Lightshow",
+            "url":[
+                "https://m.media-amazon.com/images/I/71XRDYZChLL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71u2LxC69hL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71iK-Yd8rwL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61XILiwzF0L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71ho2IWjt-L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Oculus Newest Quest 2 VR Headset 128GB Holiday Set - Advanced All-in-One Virtual Reality Headset Cover Set, White",
+            "price": 200.00,
+            "description": "128GB Storage Capacity, Top VR Experience: Oculus Quest 2 features a blazing-fast processor, top hand-tracking system, and 1832 x 1920 Pixels Per Eye high-resolution display, offering an incredibly immersive and smooth VR gaming experience.",
+            "url":[
+                "https://m.media-amazon.com/images/I/61Uy4GVp-UL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/615YaAiA-ML._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61CCnhkHjWL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51X93ev5I4L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61YNZiYKS+L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "PlayStation VR Headset + Camera Bundle [Discontinued] (Renewed)",
+            "price": 292.00,
+            "description": "Ever Expanding Library of Games - PlayStation is committed to continuously delivering new worlds of unexpected gaming experiences through PlayStationVR.",
+            "url":[
+                "https://m.media-amazon.com/images/I/71CyznJEDjL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81Ci2eDdZEL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71o-UWbUMYL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71SmNH3c6qL._SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Logitech M185 Wireless Mouse, 2.4GHz with USB Mini Receiver, 12-Month Battery Life, 1000 DPI Optical Tracking, Ambidextrous, Compatible with PC, Mac, Laptop - Black",
+            "price": 92.00,
+            "description": "Compact Mouse: With a comfortable and contoured shape, this Logitech ambidextrous wireless mouse feels great in either right or left hand and is far superior to a touchpad",
+            "url":[
+                "https://m.media-amazon.com/images/I/61yxQRsEPJL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71UjH2uALyL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71SUxRy0DCL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61HF+9WZVEL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/610MP0Lcb9L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse, Hero 12K Sensor, 12,000 DPI, Lightweight, 6 Programmable Buttons, 250h Battery Life, On-Board Memory, PC/Mac - White",
+            "price": 82.00,
+            "description": "HERO Sensor - Next-generation HERO sensor delivers incredible performance and up to 10x the power efficiency over previous generations. HERO is an optical sensor capable of exceptional accuracy and responsiveness with 400 IPS precision and up to 12,000 DPI sensitivity.",
+            "url":[
+                "https://m.media-amazon.com/images/I/51DYDLykzoL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61UtiVRLVTL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61vhOVfBmhL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71ZkVHK7tZL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71xqwhmVO5L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "myCharge Portable Charger Waterproof Power Bank Adventure 6700mAh Internal Battery Fast Charging Rugged Heavy Duty Outdoor Small USB Battery Pack External Backup for Apple iPhone, iPad, Android – Blue",
+            "price": 30.50,
+            "description": "PORTABLE CHARGER: Ideal for power boosts and extending the life of your tablet, cell phone, Bluetooth speaker, e-reader or any other standard USB devices delivering 6700mAh Internal Battery and 2.4A of shared output power for up to 4x extra battery, WATERPROOF RUBBERIZED FINISH: Designed to withstand the most extreme outdoor conditions (waterproof, drop-resistant and dirt-proof) while camping, hiking or mountaineering or just simply on the go",
+            "url":[
+                "https://m.media-amazon.com/images/I/51H7WojvufL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/6192EALD6JL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61QpDsZtGmL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71R9ACGFnzL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/716rkVkSOGL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Amazon Fire 8 Kids tablet, 8 display 32GB (Blue) + 2-pack Screen Protector",
+            "price": 130.50,
+            "description": "Save up to 60 on a full-featured tablet (not a toy) for kids ages 3–7, 1 year of Amazon Kids+, and a Kid-Proof Case with built-in stand, versus items purchased separately.",
+            "url":[
+                "https://m.media-amazon.com/images/I/81Zk+jwfOeL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61kC1LVhhbL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/613chwH3U4L._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61VsUlOAPuL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61aZPrFYJZL._AC_SL1000_.jpg"
+                ]
+        },
+        {
+            "name": "Smart Home Bundle - Echo Show 8 + Blink Video Doorbell + Blink Outdoor 1-Cam System + 2 Smart Plugs",
+            "price": 330.50,
+            "description": "Alexa can show you even more - 8” HD touchscreen, adaptive color, and stereo speakers bring entertainment to life. Make video calls with a 13 MP camera that uses auto-framing to keep you centered.",
+            "url":[
+                "https://m.media-amazon.com/images/I/51V5boi3UqL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/51V5boi3UqL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61-8dxBrDHS._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61cz1B793YL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/51AlLW71o2L._AC_SL1000_.jpg"
+                ]
+        },
+        {
+            "name": "Echo Dot (4th Gen, 2020 release) | Smart speaker with Alexa | Charcoal",
+            "price": 130.50,
+            "description": "Meet the Echo Dot - Our most popular smart speaker with Alexa. The sleek, compact design delivers crisp vocals and balanced bass for full sound., Voice control your entertainment - Stream songs from Amazon Music, Apple Music, Spotify, SiriusXM, and others. Play music, audiobooks, and podcasts throughout your home with multi-room music.",
+            "url":[
+                "https://m.media-amazon.com/images/I/51cGlUCK5WL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/81Eqgg0cvrL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71SOUtEc3JL._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61QPXTh0K9L._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61dZiWSQqVL._AC_SL1000_.jpg"
+                ]
+        },
+        {
+            "name": "Ring Smart Lighting – Floodlight, Wired, Outdoor Motion-Sensor Security Light, White (Starter Kit)",
+            "price": 89.99,
+            "description": "This Starter Kit includes one Ring Bridge to place indoors so you can get notifications, customize settings, and connect to other Ring devices - all from the Ring app.",
+            "url":[
+                "https://m.media-amazon.com/images/I/51hrw0Ubs+L._SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/61Jv+q-n3RL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71KTwMZ19OL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/91G3dIPWmZL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81hzxXdGcHL._SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "myQ Smart Garage Video Keypad with camera, wifi, and smartphone control. A smart garage keypad for your smart home. Works with Chamberlain, LiftMaster, and Craftsman openers",
+            "price": 94.50,
+            "description": "Built-in camera with 1080p HD video and wide angle view that helps busy homeowners know exactly who came in and when., Smartphone control lets you monitor your garage through a live feed or recorded event in the myQ app.",
+            "url":[
+                "https://m.media-amazon.com/images/I/61KgG7G4anL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61s1K0ghITL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/6193W1JZoiL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/614LR8w8UpL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71H-NTbHk0L._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "GE Lighting CYNC Outdoor Smart Plug, Bluetooth and Wi-Fi Outlet Socket, Weather Resistant Plug, Voice Control Outlet, Works with Alexa and Google Home",
+            "price": 52.50,
+            "description": "Turn traditional lights and devices into smart devices with the enhanced functionality of the Cync Outdoor Smart Plug like out of home control, scheduling, and scene setting.",
+            "url":[
+                "https://m.media-amazon.com/images/I/71KAJ4N48DS._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/919v9a1vAFL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51d3rdyc07S._AC_SL1000_.jpg",
+                "https://m.media-amazon.com/images/I/714FBLxykTL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/711O20VR6vL._AC_SL1500_.jpg"
+                ]
+        },
+        {
+            "name": "Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos",
+            "price": 900.00,
+            "description": "Improved Dual Pixel CMOS AF and eye detection AF 24.1 Megapixel CMOS (APS-C) sensor with is 100–6400 (H: 12800), Built-in Wi-Fi and NFC technology working temperature range: 32-104°F/0-40°C",
+            "url":[
+                "https://m.media-amazon.com/images/I/71EWRyqzw0L._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/713ShDiciHL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71sQ1on0fuL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71YqHRYSluL._AC_SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81Os6umSyIL._AC_SL1500_.jpg"
+                ]
+        }
+    ]
+}
