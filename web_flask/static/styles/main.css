@@ -114,19 +114,19 @@ nav .close {
     background-position-y: 30%;
 }
 
-.search--heading {
+.head--line {
     color: black;
     height: 90vh;
 }
 
-.search--heading > h1 {
+.head--line > h1 {
     text-transform: capitalize;
     font-size: 2.5em;
     line-height: 3.3rem;
     margin-top: 0;
 }
 
-.search--heading > p {
+.head--line > p {
     color: rgb(78, 77, 77);
     font-weight: bold;
     letter-spacing: .4em;
@@ -136,14 +136,14 @@ nav .close {
     margin-bottom: 0;
 }
 
-.search--heading > .pointer {
+.head--line > .pointer {
     stroke: black;
     position: absolute;
     bottom: 2em;
     width: 1em;
 }
 
-.search--heading > .pointer > path {
+.head--line > .pointer > path {
     fill: black;
 }
 
@@ -187,7 +187,7 @@ nav .close {
 
 .heading {
     font-size: .8rem;
-    color: rgb(169, 55, 55);
+    color: rgb(102, 100, 100);
 }
 
 .items p {
@@ -200,6 +200,30 @@ nav .close {
 
 .open--nav {
     transform: translateX(0%);
+}
+
+.just--for--you {
+    font-weight: bold;
+    font-size: 18px;
+    color:rgb(71, 63, 63)
+}
+
+.large--pictures {
+    text-align: center;
+}
+
+.img--wrapper {
+    background: white;
+}
+
+.img--wrapper img{
+    width: 70%;
+    height: 50%;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px
 }
 
 @media only screen and (min-width: 680px) {
@@ -275,7 +299,7 @@ nav .close {
         margin-top: 5em;
     }
 
-    .search--heading {
+    .head--line {
         width: 50%;
         height: auto;
         margin-bottom: 8em;
@@ -292,12 +316,12 @@ nav .close {
         font-family: 'Poppins', sans-serif;
     }
 
-    .search--heading .pointer {
+    .head--line .pointer {
         position: unset;
         margin-top: 4.5em;
     }
 
-    .search--heading {
+    .head--line {
         margin-bottom: unset;
     }
 
@@ -429,12 +453,12 @@ nav .close {
         margin: 0 auto;
     }
 
-    .search--heading {
+    .head--line {
         color: white;
         margin-top: 4em;
     }
 
-    .search--heading h1{
+    .head--line h1{
         width: 60%;
         /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);; */
     }
@@ -448,14 +472,14 @@ nav .close {
         background-position-y: 30%;
     }
 
-    .search--heading > h1 {
+    .head--line > h1 {
         color: black;
         font-size: 2.5em;
         line-height: 1.3em;
         margin-top: .2em;
     }
 
-    .search--heading > p {
+    .head--line > p {
         text-transform: uppercase;
         font-weight: bold;
         color: gray;
