@@ -1,0 +1,494 @@
+body {
+    margin: 0 1.5em;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(245, 243, 243);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out
+}
+
+ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 8em;
+}
+
+ul li a{
+    color: black;
+    padding: 0.75em 2em;
+    display: block;
+    text-decoration: none;
+}
+
+ul > li > a:hover {
+    background: rgb(242, 239, 239);
+}
+
+nav .close {
+    width: 2.5em;
+    float: right;
+    margin: 2em;
+}
+
+.menu {
+    width: 3em;
+    stroke: black;
+}
+
+.menu > path {
+    fill: black;
+}
+
+.logo {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.logo span {
+    color: rgba(14, 198, 14, 0.931);
+}
+
+.footer {
+    display: block;
+    background: #343F4F;
+    width: 100%;
+    height: 30em;
+}
+
+.single--picture {
+    display: none;
+}
+
+.search {
+    position: absolute;
+    top: 17.5em;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    z-index: 1;
+    display: inline-block;
+    width: 100px;
+    line-height: 24px;
+    padding-top: .5px;
+    padding-bottom: .5px;
+    padding-left: 30px;
+    padding-right: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0;
+}
+
+.magnify {
+    margin-left: -1.6em;
+    z-index: 3;
+    width: 8%;
+    cursor: pointer;
+}
+
+.hero-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/2-sale.jpg');
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.head--line {
+    color: black;
+    height: 90vh;
+}
+
+.head--line > h1 {
+    text-transform: capitalize;
+    font-size: 2.5em;
+    line-height: 3.3rem;
+    margin-top: 0;
+}
+
+.head--line > p {
+    color: rgb(78, 77, 77);
+    font-weight: bold;
+    letter-spacing: .4em;
+    font-size: .7rem;
+    margin-top: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.head--line > .pointer {
+    stroke: black;
+    position: absolute;
+    bottom: 2em;
+    width: 1em;
+}
+
+.head--line > .pointer > path {
+    fill: black;
+}
+
+.hero {
+    margin-top: 4em;
+    padding-bottom: 2em;
+}
+
+.triple .related--category {
+    display: flex;
+    height: 300px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.category {
+    background: white;
+    padding: 5px 20px;
+    border: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.triple .related--category img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.related--category .items {
+    flex: 1 1 auto;
+    width: 40%;
+    height: 200px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 6px;
+    padding-bottom: 3em;
+    background-color: white;
+}
+
+.heading {
+    font-size: .8rem;
+    color: rgb(102, 100, 100);
+}
+
+.items p {
+    text-align: center;
+}
+
+.price {
+    margin: 0;
+}
+
+.open--nav {
+    transform: translateX(0%);
+}
+
+.just--for--you {
+    font-weight: bold;
+    font-size: 18px;
+    color:rgb(71, 63, 63)
+}
+
+.large--pictures {
+    text-align: center;
+}
+
+.img--wrapper {
+    background: white;
+}
+
+.img--wrapper img{
+    width: 70%;
+    height: 50%;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px
+}
+
+@media only screen and (min-width: 680px) {
+    body {
+        margin: 1.5em 5em;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0%);
+        width: auto;
+        height: auto;
+        background: unset;
+        display: flex;
+        text-align: center;
+        position: unset;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-right: 2em;
+    }
+
+    nav ul {
+        display: flex;
+        margin-top: .9em;
+        gap: 1em;
+    }
+
+    nav ul li a {
+        padding: .6em;
+        position: relative;
+    }
+
+    nav ul li a:hover{
+        background: unset;
+    }
+
+    nav ul li a.active:before {
+        position: absolute;
+        content: "";
+        width: 35%;
+        height: 1px;
+        border-bottom: 2px solid black;
+        bottom: -6px;
+    }
+
+    nav ul li a:before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 1px;
+        border-bottom: 2px solid rgb(152, 152, 152);
+        bottom: -6px;
+        transition: width .3s;
+    }
+
+    nav ul li a:hover:before {
+        width: 35%;
+    }
+
+    nav .close {
+        display: none;
+    }
+
+    .search {
+        margin-top: 5em;
+    }
+
+    .head--line {
+        width: 50%;
+        height: auto;
+        margin-bottom: 8em;
+    }
+
+    .hero {
+        margin-top: 28em;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    body {
+        margin: 1.5em 8em;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .head--line .pointer {
+        position: unset;
+        margin-top: 4.5em;
+    }
+
+    .head--line {
+        margin-bottom: unset;
+    }
+
+    .hero {
+        margin-top: 1em;
+    }
+
+    .triple .related--category {
+        width: 356px;
+        height: 177px;
+    }
+
+    .triple .related--category .items {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .triple .related--category img {
+        width: 100%;
+        height: 75%;
+        margin-bottom: unset;
+    }
+
+    .triple .related--category .items p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 12px;
+        color:rgb(71, 63, 63)
+    }
+
+    .triple {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .category {
+        margin: 10px;
+    }
+
+    .category h2 {
+        font-size: 1rem;
+        margin-top: .3em;
+        margin-bottom: .6em;
+        color: rgb(44, 32, 32);
+    }
+
+    .just--for--you {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color:rgb(35, 28, 28);
+        margin: 0;
+    }
+
+    .large--pictures {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /*overflow: hidden;*/
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .large--pictures img {
+        flex: 0 0 225px;
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+    }
+
+    .img--wrapper {
+        width: 200px;
+        margin: 0;
+        /* margin: 10px; */
+        padding-left: .7em;
+        padding-right: .7em;
+        background: white
+    }
+
+    .img--wrapper p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 1em;
+    }
+
+    .img--wrapper .price {
+        font-weight: bold;
+        font-size: 18px;
+        color:rgb(71, 63, 63)
+    }
+}
+
+@media only screen and (min-width: 1145px) {
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .hero-img {
+        position: absolute;
+        z-index: -1;
+        background-image: url('./images/2-sale.jpg');
+        width: 100%;
+        top: 6em;
+        left: 0;
+        background-size: cover;
+        background-position-y: 50%;
+        height: 60%;
+        margin-bottom: 8em;
+    }
+
+    .log {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .log > span {
+        color: rgb(14, 159, 14);
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .head--line {
+        color: white;
+        margin-top: 4em;
+    }
+
+    .head--line h1{
+        width: 60%;
+        /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);; */
+    }
+
+    .hero-img {
+        left: unset;
+        right: 0;
+        width: 50%;
+        top: 0;
+        height: 32em;
+        background-position-y: 30%;
+    }
+
+    .head--line > h1 {
+        color: black;
+        font-size: 2.5em;
+        line-height: 1.3em;
+        margin-top: .2em;
+    }
+
+    .head--line > p {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;
+        letter-spacing: .3em;
+    }
+
+    .hero {
+        margin-top: 10em;
+    }
+
+}
