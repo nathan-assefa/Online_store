@@ -127,9 +127,9 @@
 	    <div class="picture">
     		<div class="img--wrapper">
             		{% if product.image %}
-				<a href="/web_flask.testing.testing_path"><img src="{{ product.image }}" alt=""></a>
+                    {% set productId = product.id %}
+                    <a href="{{ url_for('item', product_id=productId) }}"><img src="{{ product.image }}" alt=""></a>
             		{% endif %}
-            		<p>{{ product.description }}</p>
 			<p class="price">${{ product.price }} - ${{ product.price + 2}}</p>
             		<p class="quantity">Quantity: 2-pieces</p>
     		</div>

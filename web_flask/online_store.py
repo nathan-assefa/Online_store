@@ -5,7 +5,7 @@ from models import storage
 from models.product import Product
 from models.category import Category
 from models.url import Url
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -39,15 +39,34 @@ def online_shop():
             image = product.urls[0].link  # Select the first image
         else:
             image = None
-
         products_data.append({
             'name': product.name,
             'image': image,
             'description': product.description,
-            'price': product.price
+            'price': product.price,
+            'id': product.id
             })
     # Pass the data to the template
     return render_template('index.html', products=products_data)
+
+@app.route('/item/<string:product_id>', strict_slashes=False)
+def item(product_id):
+    products = storage.all(Product)
+    products_data = []
+
+    for product in products.values():
+        if product.id == product_id:
+            products_data.append({
+                'name': product.name,
+                'image': product.urls,
+                'description': product.description,
+                'price': product.price,
+                'id': product.id
+                })
+            break
+    # Pass the data to the template
+    return render_template('single_item.html', products=products_data[0])
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)

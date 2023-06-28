@@ -9,7 +9,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/testing', strict_slashes=False)
+@app.route('/testing_path', strict_slashes=False)
 def online_shop():
     return 'hello world'
 
