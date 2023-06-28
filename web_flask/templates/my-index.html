@@ -127,14 +127,14 @@
 	    <div class="picture">
     		<div class="img--wrapper">
             		{% if product.image %}
-				<a href="/web_flask.testing.testing_path"><img src="{{ product.image }}" alt=""></a>
+                		<img src="{{ product.image }}" alt="">
             		{% endif %}
             		<p>{{ product.description }}</p>
 			<p class="price">${{ product.price }} - ${{ product.price + 2}}</p>
             		<p class="quantity">Quantity: 2-pieces</p>
     		</div>
-	    </div>
 	    {% endfor %}
+	    </div>
 	 </div>
     </div>
     <footer>

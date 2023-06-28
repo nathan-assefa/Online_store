@@ -316,6 +316,10 @@ nav .close {
         font-family: 'Poppins', sans-serif;
     }
 
+    .large--pictures {
+	    display: flex;
+    }
+
     .head--line .pointer {
         position: unset;
         margin-top: 4.5em;
@@ -381,9 +385,9 @@ nav .close {
 
     .large--pictures {
         display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        overflow: hidden;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /*overflow: hidden;*/
     }
 
     .wrapper {
@@ -399,7 +403,7 @@ nav .close {
     }
 
     .img--wrapper {
-        width: 225px;
+        width: 200px;
         margin: 0;
         /* margin: 10px; */
         padding-left: .7em;
