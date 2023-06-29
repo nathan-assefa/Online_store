@@ -1,15 +1,28 @@
+.wrapper {
+    width: 100%;
+}
+        
+.bgd{
+    height: auto;
+    max-width: none;
+    padding: 0;
+    background: url("/static/images/Green-Ecommerce.png");
+}
 /* Main Banner Area Styles */
 .page-heading {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust the height as needed */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("path/to/your/image.jpg");
+    height: 200px; 
     background-size: cover;
     background-position: center;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inner-content h2 {
+    color:green;
 }
 
 .page-heading h2 {
@@ -20,7 +33,6 @@
 
 /* Page Heading Styles */
 .page-heading {
-    background-color: green;
     padding: 40px 0;
     color: #fff;
 }
@@ -64,5 +76,39 @@
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* Button Styles */
+.btn {
+    display: inline;
+    background-color: #E55039;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #C0392B;
+    cursor: pointer;
+}
+
+/* Input Styles */
+.form-control {
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #E55039;
+    outline: none;
 }
 
