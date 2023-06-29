@@ -184,12 +184,6 @@ p.details {
     left: -30px;
     pointer-events: none;
 }
-.card2 {
-    background-image: url('../images/clothing2.jpg');
-}
-.card3 {
-    background-image: url('../images/clothing3.jpg');
-}
 
 .card-details {
     background: white;
@@ -216,6 +210,10 @@ p.product-price {
     font-size: 1.8rem;
 }
 
+.product--name {
+    text-transform: capitalize;
+}
+
 /* Microinteractions */
 
 nav ul li a:hover:before {
@@ -234,8 +232,12 @@ nav ul li a:hover:before {
     text-decoration: underline;
 }
 
-.card:hover {
+.card {
     background-size: 120%;
+}
+
+.card:hover {
+    background-size: 100%;
 }
 
 .card:hover .card-details {
@@ -273,7 +275,8 @@ nav ul li a:hover:before {
     margin-right: .5em;
     margin-bottom: 1.5em;
     width: 20em;
-    height: 100%;
+    height: 20em;
+    object-fit: cover;
 }
 
 @keyframes reveal {

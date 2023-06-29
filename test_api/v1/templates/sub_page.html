@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fauxica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sub_page.css') }}">
 </head>
 <body>
     <div class="overlay"></div>
@@ -26,12 +26,12 @@
 
         <main>
             <div class="left-col">
-                <h1>[Product Name] - Buy [Product Name] Online - [Your Store Name]</h1>
+		<h1><span class="product--name">{{ product.name }}</span> - Unleash the Magic: Embrace the Enchanting {{ product.name }}!</h1>
                 <p class="subhead">
-                    Explore Our Wide Range of [Product Category]
+		Explore Our Wide Range of {{ category_name }}
                 </p>
                 <div class="cta-btns">
-                    <a href="#" class="primary-cta">Browse our collection</a>
+                    <a href="/test_api/v1/shop" class="primary-cta">Browse our collection</a>
 
                     <a href="#" class="secondary-cta">
                         <span>Add to cart</span>
@@ -50,42 +50,40 @@
                 </div>
             </div>
             <div class="right-col">
-                <div class="card card1">
+		    <div style="background-image: url('{{ images[0] }}')" class="card card1">
                     <div class="card-details">
                         <div>
-                            <a href="#" class="product-title">Fauxica Sport</a>
-                            <p>Running shoes</p>
+				<a href="#" class="product-title">{{ category_name }}</a>
+				<p>{{ product.name }}</p>
                         </div>
-                        <p class="product-price">$49</p>
+			<p class="product-price">${{ product.price }}</p>
                     </div>
                 </div>
-                <div class="card card2">
+                <div style="background-image: url('{{ images[1] }}')" class="card card2">
                     <div class="card-details">
                         <div>
-                            <a href="#" class="product-title">Fauxica Sport</a>
-                            <p>Running shoes</p>
+				<a href="#" class="product-title">{{ category_name }}</a>
+				<p>{{ product.name }}</p>
                         </div>
-                        <p class="product-price">$49</p>
+			<p class="product-price">${{ product.price }}</p>
                     </div>
                 </div>
-                <div class="card card3">
+                <div style="background-image: url('{{ images[2] }}')" class="card card3">
                     <div class="card-details">
                         <div>
-                            <a href="#" class="product-title">Fauxica Sport</a>
-                            <p>Running shoes</p>
+				<a href="#" class="product-title">{{ category_name }}</a>
+				<p>{{ product.name }}</p>
                         </div>
-                        <p class="product-price">$49</p>
+			<p class="product-price">${{ product.price }}</p>
                     </div>
                 </div>
             </div>
         </main>
         <p class="related--products">Related products</p>
         <div class="related--picture">
-            <img src="https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg" alt="" class="sub--img">
-            <img src="https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg" alt="" class="sub--img">
-            <img src="https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg" alt="" class="sub--img">
-            <img src="https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg" alt="" class="sub--img">
-            <img src="https://m.media-amazon.com/images/I/71Wd7lv1bUL._AC_SL1500_.jpg" alt="" class="sub--img">
+	    {% for image in related_products %}
+	    	<img src="{{ image }}" alt="" class="sub--img">
+	    {% endfor %}
         </div>
     </div>
 
