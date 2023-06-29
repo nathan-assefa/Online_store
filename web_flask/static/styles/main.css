@@ -208,8 +208,21 @@ nav .close {
     color:rgb(71, 63, 63)
 }
 
+.picture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    position: relative;
+}
+
 .large--pictures {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-aligin: center;
+}
+
+.small_details {
+    text-aligin: center;
 }
 
 .img--wrapper {
@@ -217,8 +230,9 @@ nav .close {
 }
 
 .img--wrapper img{
+    max-width: 100% !important;
+    height: auto !important;
     width: 70%;
-    height: 50%;
 }
 
 .price {
@@ -494,4 +508,9 @@ nav .close {
         margin-top: 10em;
     }
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

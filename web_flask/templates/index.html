@@ -124,7 +124,7 @@
         <p class="just--for--you">Just for you</p>
         <div class="large--pictures">
 	    {% for product in products|sort(attribute='name') %}
-	    <div class="picture">
+	    <section class="picture">
     		<div class="img--wrapper">
             		{% if product.image %}
                     {% set productId = product.id %}
@@ -134,10 +134,12 @@
                         <img src="{{ product.image }}" alt="">
                     </a>
             		{% endif %}
-			<p class="price">${{ product.price }} - ${{ product.price + 2}}</p>
-            		<p class="quantity">Quantity: 2-pieces</p>
-    		</div>
-	    </div>
+            </div>
+            <div class="small_details">
+              	<p class="price">${{ product.price }} - ${{ product.price + 2}}</p>
+                <p class="quantity">Quantity: 2-pieces</p>
+      		</div>
+	    </section>
 	    {% endfor %}
 	 </div>
     </div>
