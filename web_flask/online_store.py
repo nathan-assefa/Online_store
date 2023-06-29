@@ -44,15 +44,17 @@ def online_shop():
             'image': image,
             'description': product.description,
             'price': product.price,
-            'id': product.id
+            'id': product.id,
+            'category_id': product.category.id
             })
     # Pass the data to the template
     return render_template('index.html', products=products_data)
 
-@app.route('/item/<string:product_id>', strict_slashes=False)
-def item(product_id):
+@app.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)
+def item(category_id, product_id, product_name):
     products = storage.all(Product)
     products_data = []
+    related_products_data = []
 
     for product in products.values():
         if product.id == product_id:
@@ -61,11 +63,32 @@ def item(product_id):
                 'image': product.urls,
                 'description': product.description,
                 'price': product.price,
-                'id': product.id
+                'id': product.id,
+                'category_id': product.category.id
                 })
             break
+    for related_products in products.values():
+        if related_products.category_id == category_id:
+            if related_products.urls:
+                image = related_products.urls[0].link
+            else:
+                image = None
+            if not related_products.id == product_id:
+                if related_products.name == product_name:
+                    related_products_data.append({
+                        'name': related_products.name,
+                        'image': image,
+                        'description': related_products.description,
+                        'price': related_products.price,
+                        'id': related_products.id,
+                        'category_id': related_products.category.id
+                        })
+
     # Pass the data to the template
-    return render_template('single_item.html', products=products_data[0])
+    return render_template('single_item.html',
+            products=products_data[0],
+            related_products=related_products_data
+            )
 
 
 if __name__ == "__main__":
