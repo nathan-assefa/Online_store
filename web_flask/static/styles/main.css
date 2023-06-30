@@ -218,11 +218,11 @@ nav .close {
 .large--pictures {
     display: flex;
     flex-wrap: wrap;
-    text-aligin: center;
+    text-align: center;
 }
 
 .small_details {
-    text-aligin: center;
+    text-align: center;
 }
 
 .img--wrapper {
