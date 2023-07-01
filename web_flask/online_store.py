@@ -58,9 +58,13 @@ def item(category_id, product_id, product_name):
 
     for product in products.values():
         if product.id == product_id:
+            if product.urls:
+                main_image = product.urls[0]
+                images = product.urls
             products_data.append({
                 'name': product.name,
-                'image': product.urls,
+                'main_image': main_image,
+                'images': images,
                 'description': product.description,
                 'price': product.price,
                 'id': product.id,
@@ -85,7 +89,8 @@ def item(category_id, product_id, product_name):
                         })
 
     # Pass the data to the template
-    return render_template('single_item.html',
+    #return render_template('single_item.html',
+    return render_template('product_item.html',
             products=products_data[0],
             related_products=related_products_data
             )

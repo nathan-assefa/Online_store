@@ -20,11 +20,34 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start
+    align-items: center
 }
 
 .inner-content h2 {
-    color:black;
+  color:black;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h2 span {
+  display: block;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  color: #777;
 }
 
 .page-heading h2 {
@@ -79,38 +102,3 @@
     height: auto;
     display: block;
 }
-
-/* Button Styles */
-.btn {
-    display: inline;
-    background-color: #E55039;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #C0392B;
-    cursor: pointer;
-}
-
-/* Input Styles */
-.form-control {
-    display: inline;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-.form-control:focus {
-    border-color: #E55039;
-    outline: none;
-}
-
