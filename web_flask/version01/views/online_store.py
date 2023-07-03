@@ -1,26 +1,20 @@
 #!/usr/bin/python3
 
 
+from web_flask.version01.views import app_views
 from models import storage
 from models.product import Product
 from models.category import Category
 from models.url import Url
 from flask import Flask, render_template, url_for
 
-app = Flask(__name__)
-
-@app.teardown_appcontext
-def close_db(exit):
-    """This context function gives back the
-    connection once request is done"""
-    storage.close()
 
 # Landing Page
-@app.route('/', strict_slashes=False)
+@app_views.route('/', strict_slashes=False)
 def landing_page():
     return render_template('landing_page.html')
 
-@app.route("/products/<product_id>", strict_slashes=False)
+@app_views.route("/products/<product_id>", strict_slashes=False)
 def product(product_id):
     product = storage.get(Product, product_id)
     all_products = storage.all(Product).values()
@@ -51,7 +45,7 @@ def product(product_id):
             )
 
 # Home Page
-@app.route('/shop', strict_slashes=False)
+@app_views.route('/shop', strict_slashes=False)
 def online_shop():
     products = storage.all(Product)
     products_data = []
@@ -87,7 +81,7 @@ def online_shop():
     return render_template('index.html', products=products_data)
 
 # Single Products Page
-@app.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)
+@app_views.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)
 def item(category_id, product_id, product_name):
     products = storage.all(Product)
     products_data = []

@@ -12,34 +12,10 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from os import getenv
 from models.user import User
 from models import storage
+from web_flask.version01.views import app_views
 
 
-app = Flask(__name__)
-#app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///database.db'
-app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql+mysqldb://{}:{}@{}/{}'.format(
-        getenv('ONLINE_STORE_MYSQL_USER'),
-        getenv('ONLINE_STORE_MYSQL_PWD'),
-        getenv('ONLINE_STORE_MYSQL_HOST'),
-        getenv('ONLINE_STORE_MYSQL_DB')
-        )
-
-app.config["SECRET_KEY"] = "thisidsupposedtobeasecretkey"
-app.config['JWT_SECRET_KEY'] = 'thisissupposedtobeajwtsecretkey'
-
-#db.init_app(app)
-db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)
-#jwt = JWTManager(app)
-
-
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = "login"
-
-@login_manager.user_loader
-def load_user(user_id):
-    user = storage.user_by_id(user_id)
-    return user
+#bcrypt = Bcrypt()
 
 class LoginForm(FlaskForm):
     email = StringField("email", validators=[InputRequired(), Email()], render_kw={"placeholder": "Email"})
@@ -93,12 +69,16 @@ class RegisterForm(FlaskForm):
             raise ValidationError(
                     "Username already Exists")
 
-@app.route("/")
+@app_views.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("home.html")
 
-@app.route("/login", methods=["GET", "POST"])
+
+@app_views.route("/login", methods=["GET", "POST"])
 def login():
+    from web_flask.version01.app import bcrypt
+
+
     form = LoginForm()
 
     if form.validate_on_submit():
@@ -109,15 +89,18 @@ def login():
                 return redirect(url_for("dashboard", form=form))
     return render_template("login.html", form=form)
 
-@app.route("/logout", methods=["GET", "POST"])
+@app_views.route("/logout", methods=["GET", "POST"])
 @login_required
 def logout():
     logout_user()
     return redirect(url_for("login"))
 
 
-@app.route("/register", methods=["GET", "POST"])
+@app_views.route("/register", methods=["GET", "POST"])
 def register():
+    from web_flask.version01.app import bcrypt
+
+
     form = RegisterForm()
 
     if form.validate_on_submit():
@@ -134,7 +117,7 @@ def register():
 
     return render_template("register.html", form=form)
 
-@app.route("/dashboard", methods=["GET", "POST"])
+@app_views.route("/dashboard", methods=["GET", "POST"])
 @login_required
 def dashboard():
     form = LoginForm()
