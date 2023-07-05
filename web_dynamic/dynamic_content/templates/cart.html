@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ecommerce App - Cart Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css' }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/cart.css' }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.css" integrity="sha512-NXUhxhkDgZYOMjaIgd89zF2w51Mub53Ru3zCNp5LTlEzMbNNAjTjDbpURYGS5Mop2cU4b7re1nOIucsVlrx9fA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts/cart.js' }}"></script>
+</head>
+  <body>
+    <div class='header'>
+      <div class='title'>
+        <h4>
+          <a href="index.html">
+            MakeEasy - Ecommerce
+          </a>
+        </h4>
+        <p>
+          <a href="" class="clear_cart"><i class="far fa-trash-alt"></i></a>
+        </p>
+      </div>
+    </div>
+    <body>
+     <div id="wrapper">
+      <div class="flex">
+        <p>
+          Total Amount:
+        </p>
+        <p>
+          <span class="total_amount"></span>
+          <a href="">Buy</a>
+        </p>
+      </div>
+      <table id="keywords" cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th><span>Name</span></th>
+            <th><span>Quantity</span></th>
+            <th><span>Price</span></th>
+            <th><span>Total Price</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+     </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js" integrity="sha512-lOrm9FgT1LKOJRUXF3tp6QaMorJftUjowOWiDcG5GFZ/q7ukof19V0HKx/GWzXCdt9zYju3/KhBNdCLzK8b90Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
