@@ -279,4 +279,16 @@ class DBStorage:
         sessions to work with different database connections concurrently.
         """
                 
+    def user_by_email(self, email):
+        """ A method to retrieve a user by email """
+        user =  self.__session.query(User).filter(User.email == email).first()
+        if user:
+            return user
+        return None
 
+    def user_by_id(self, user_id):
+        """ A method to retrieve a user by ID """
+        user =  self.__session.query(User).filter(User.id == user_id).first()
+        if user:
+            return user
+        return None

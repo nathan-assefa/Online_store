@@ -60,13 +60,20 @@
                             <p class="price">${{ products.price }} - ${{ products.price + 2}}</p> 
                         </div>
                         <p class="discription">{{ products.description }}</p>
-                        <div class="d-flex">
-                            <input class="form-control" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn" type="button">
-                                <i class="cart"></i>
-                                Add to cart
-                            </button>
                         </div>
+                        <div class="quantity-content">
+                            <h6 class="cart">No. of Orders</h6>
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+                            <div class="total">
+                                <h4>Total: $250.00</h4>
+                                <div class="main-border-button"><a href="#">Add To Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>  
             </div>
             {% endif %}

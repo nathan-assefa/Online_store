@@ -15,6 +15,22 @@ def close_db(exit):
     connection once request is done"""
     storage.close()
 
+# Landing Page
+@app.route('/', strict_slashes=False)
+def landing_page():
+    """
+    if product.category.name == 'dressings':
+        category_name = "Glamourra"
+    elif product.category.name == 'shoe':
+        category_name = "Footsorcery"
+    elif product.category.name == 'jewelry':
+        category_name = "Glimmera"
+    elif product.category.name == 'tech':
+        category_name = "Technomancy"
+    """
+    return render_template('landing_page.html')
+
+# Home Page
 @app.route('/shop', strict_slashes=False)
 def online_shop():
     products = storage.all(Product)
@@ -50,6 +66,7 @@ def online_shop():
     # Pass the data to the template
     return render_template('index.html', products=products_data)
 
+# Single Products Page
 @app.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)
 def item(category_id, product_id, product_name):
     products = storage.all(Product)
@@ -58,9 +75,13 @@ def item(category_id, product_id, product_name):
 
     for product in products.values():
         if product.id == product_id:
+            if product.urls:
+                main_image = product.urls[0]
+                images = product.urls
             products_data.append({
                 'name': product.name,
-                'image': product.urls,
+                'main_image': main_image,
+                'images': images,
                 'description': product.description,
                 'price': product.price,
                 'id': product.id,
@@ -85,7 +106,8 @@ def item(category_id, product_id, product_name):
                         })
 
     # Pass the data to the template
-    return render_template('single_item.html',
+    #return render_template('single_item.html',
+    return render_template('product_item.html',
             products=products_data[0],
             related_products=related_products_data
             )
