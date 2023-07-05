@@ -13,6 +13,8 @@ body {
 }
 
 .swiper {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
@@ -34,4 +36,137 @@ body {
 
 .swiper .swiper-pagination-bullet-active {
   background: green;
+}
+
+/** User testimonial */
+.gray-container {
+  padding: 40px 0;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimony {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.users-testimony {
+  margin: 0 20px;
+}
+
+figure {
+  position: relative;
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+
+/* contact us section */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-heading span {
+  font-size: 16px;
+  color: #777;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+.user-details {
+  margin-bottom: 15px;
+}
+
+.user-details input,
+.user-details textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-details textarea {
+  height: 100px;
+}
+
+.send-message-cta {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 1.0em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.right-side iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
 }
