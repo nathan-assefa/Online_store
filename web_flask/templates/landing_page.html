@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/sub_page.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/landing_page.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/bottom_page.css') }}">
@@ -96,22 +97,45 @@
             </div>
         </div>
     </main>
-    <!-- ***** user testimonial Area Starts ***** -->
+    </div>
+    <div class="product-categories">
+        <h2>Product Categories</h2>
+        <ul class="categories">
+            <li>
+                <i class="fas fa-shoe-prints category-icon"></i>
+                <span class="category-name">Shoes</span>
+            </li>
+            <li>
+                <i class="fas fa-tshirt category-icon"></i>
+                <span class="category-name">Dressings</span>
+            </li>
+            <li>
+                <i class="fas fa-gem category-icon"></i>
+                <span class="category-name">Jewelry</span>
+            </li>
+            <li>
+                <i class="fas fa-laptop category-icon"></i>
+                <span class="category-name">Tech Items</span>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
     <div class="gray-container">
+        <h2>Meet the Team</h2>
         <div class="testimonial-container">
             <ul class="testimony">
                 <li class="users-testimony">
                     <figure>
-                        <img class="user-image" src="images/user1.png" alt="User testimonial picture">
-                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
-                        <figcaption>- Jane Doe</figcaption>
+                        <img class="user-image" src="/static/images/5789390670199370758_120.jpg" alt="User testimonial picture">
+                        <blockquote>She is a talented full-stack developer with a passion for building robust and scalable web applications.</blockquote>
+                        <figcaption>- Mahlet Seifu</figcaption>
                     </figure>
                 </li>
                 <li class="users-testimony">
                     <figure>
-                        <img class="user-image" src="images/user2.png" alt="User testimonial picture">
-                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
-                        <figcaption>- John Doe</figcaption>
+                        <img class="user-image" src="/static/images/T0195LMKD1R-U03E6A7DYHZ-6bb6cd124b6e-512.jpg" alt="User testimonial picture">
+                        <blockquote>He is a highly skilled full-stack developer who excels in crafting innovative and efficient solutions.</blockquote>
+                        <figcaption>- Nathan Assefa</figcaption>
                     </figure>
                 </li>
             </ul>

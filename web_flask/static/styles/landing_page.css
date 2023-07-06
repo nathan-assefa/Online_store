@@ -38,9 +38,59 @@ body {
   background: green;
 }
 
+/* product categories section */
+
+.product-categories {
+  background-color: lightgreen;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-categories h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-categories ul.categories {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+
+.product-categories li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-icon {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category-name {
+  font-size: 16px;
+  color: #333;
+}
+
+
 /** User testimonial */
 .gray-container {
   padding: 40px 0;
+}
+
+.gray-container h2 {
+  text-align: center;
+  margin: 40px;
 }
 
 .testimonial-container {
