@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+       	{% extends "base.html" %}
 
-{% block content %}   
-<div class="container">
-        <div class="swiper">
+	{% block content %}
+
+	<div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -112,81 +112,6 @@
         </div>
     </div>
     </div>
-   </div>
     <!-- ***** Contact Area Ends ***** -->
     <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <div class="footer-item">
-                        <h4>Our Address</h4>
-                        <ul>
-                            <li><a href="#">Lideta, Addis Ababa, Ethiopia</a></li>
-                            <li><a href="#">gebeyahub@company.com</a></li>
-                            <li><a href="#">09-02-003-490</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-item">
-                        <h4>Categories</h4>
-                        <ul>
-                            <li><a href="#">Dressings</a></li>
-                            <li><a href="#">Shoes</a></li>
-                            <li><a href="#">Jwellery</a></li>
-                            <li><a href="#">Tech</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-item">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><a href="#">Homepage</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <div class="footer-item">
-                        <h4>Information</h4>
-                        <ul>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">FAQ's</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Tracking ID</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-{% endblock %}
-</div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});        
-    </script>
-</body>
-</html>
+	{% endblock %}
