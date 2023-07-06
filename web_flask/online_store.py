@@ -107,7 +107,7 @@ def landing_page():
     return render_template('landing_page.html')
 
 # About us page
-@app.route('/about_us, strict_slashes=False')
+@app.route('/about_us', strict_slashes=False)
 def about_us():
     return render_template('about-us_page.html')
 
