@@ -12,7 +12,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 nav {
@@ -114,6 +114,49 @@ nav .close {
 
 .logo span {
     color: rgba(14, 198, 14, 0.931);
+}
+
+.auth {
+    position: fixed;
+    top: 3em;
+    right: 4em;
+    display: flex;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+.number--of--items {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    width: 20px;
+    height: 20px;
+    border: 1px green solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    z-index: 999;
+}
+
+.cart {
+    display: inline-block;
+    margin-top: .6em;
+    width: 4em;
+    height: 4em;
+}
+
+.signup {
+    width: 8em;
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 1.9em;
+    font-size: 1.6rem;
+    margin-right: 1.5em;
 }
 
 .footer {
