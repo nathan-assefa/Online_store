@@ -55,18 +55,6 @@ class LoginForm(FlaskForm):
             raise ValidationError(
                     "Don't have an account; Register instead")
 
-"""
-    def validate_password(self):
-        user = storage.user_by_email(email.data)
-        if user:
-            #if not bcrypt.check_password_hash(password = user_email.password, password.data):
-            hashed_entered_password = bcrypt.hashpw(password.data.encode('utf-8'), user_email.password)
-            #if not bcrypt.check_password_hash(user_email.password, password):
-            if not hashed_entered_password == user.password:
-                raise ValidationError(
-                        "Unauthorized access")
-"""
-
 
 class RegisterForm(FlaskForm):
     firstname = StringField("firstname", validators=[InputRequired(), Length(min=4, max=15)], render_kw={"placeholder": "First Name"})
@@ -135,47 +123,45 @@ def online_shop():
     return render_template('home_page.html', products=products_data)
 
 # Single Products Page
-@app.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)
-def item(category_id, product_id, product_name):
+@app.route('/item/<string:product_id>/', strict_slashes=False)
+def item(product_id):
+    product = storage.get(Product, product_id)
     products = storage.all(Product)
-    products_data = []
+    product_data = {}
     related_products_data = []
 
-    for product in products.values():
-        if product.id == product_id:
-            if product.urls:
-                main_image = product.urls[0]
-                images = product.urls
-            products_data.append({
-                'name': product.name,
-                'main_image': main_image,
-                'images': images,
-                'description': product.description,
-                'price': product.price,
-                'id': product.id,
-                'category_id': product.category.id
-                })
-            break
-    for related_products in products.values():
-        if related_products.category_id == category_id:
-            if related_products.urls:
-                image = related_products.urls[0].link
+    if product:
+        if product.urls:
+            main_image = product.urls[0].link
+            images = product.urls
+        product_data.update({
+            'name': product.name,
+            'main_image': main_image,
+            'images': images,
+            'description': product.description,
+            'price': product.price,
+            'id': product.id,
+            'category_id': product.category.id
+            })
+
+    for related_product in products.values():
+        if related_product.name == product.name and related_product.id != product.id:
+            if related_product.urls:
+                image = related_product.urls[0].link
             else:
                 image = None
-            if not related_products.id == product_id:
-                if related_products.name == product_name:
-                    related_products_data.append({
-                        'name': related_products.name,
-                        'image': image,
-                        'description': related_products.description,
-                        'price': related_products.price,
-                        'id': related_products.id,
-                        'category_id': related_products.category.id
-                        })
-
+            related_products_data.append({
+                'name': related_product.name,
+                'image': image,
+                'description': related_product.description,
+                'price': related_product.price,
+                'id': related_product.id,
+                'category_id': related_product.category.id
+                })
+    
     # Pass the data to the template
     return render_template('product_item.html',
-            products=products_data[0],
+            product=product_data,
             related_products=related_products_data
             )
 

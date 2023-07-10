@@ -20,20 +20,20 @@
         <section class="single-item">
             <div class="container flex">
                 <div class="left">
-                {% if products %}
+                {% if product %}
                     <div class="main_image">
-                        <img src="{{ products.main_image.link }}" class="slide">
+                        <img src="{{ product.main_image }}" class="slide">
                     </div>
                     <div class="option flex">
-                    {% for img in products.images %}
+                    {% for img in product.images %}
                         <div class="images"><img class="items_images" src="{{ img.link }}" alt="..." onclick="img('{{ img.link }}')"/></div>
                     {% endfor %}
                     </div>
                 </div>
                 <div class="right">
-                    <h3>{{ products.name }}</h3>
-                    <h4>${{ products.price }} - ${{ products.price + 2}}</h4>
-                    <p>{{ products.description }}</p>
+                    <h3>{{ product.name }}</h3>
+                    <h4>${{ product.price }} - ${{ product.price + 2}}</h4>
+                    <p>{{ product.description }}</p>
                     <div class="add flex1">
                         <div class="num_of_items"><h4>No. of Orders</h4></div>
                         <div class="quantity buttons_added">
@@ -58,9 +58,7 @@
     		<div class="img--wrapper">
             		{% if product.image %}
                     {% set productId = product.id %}
-                    {% set categoryId = product.category_id %}
-                    {% set productName = product.name %}
-                    <a href="{{ url_for('item', product_id=productId, category_id=categoryId, product_name=productName) }}">
+                    <a href="{{ url_for('item', product_id=productId) }}">
                         <img src="{{ product.image }}" alt="">
                     </a>
             		{% endif %}
