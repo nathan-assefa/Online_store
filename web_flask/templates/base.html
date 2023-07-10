@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/landing_page.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/bottom_page.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main_single.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/product_item.css') }}">
 </head>
 <body>
     <!--<div class="swiper">-->
@@ -59,7 +61,8 @@
                         <ul>
                             <li><a href="#">Lideta, Addis Ababa, Ethiopia</a></li>
                             <li><a href="#">gebeyahub@company.com</a></li>
-                            <li><a href="#">09-02-003-490</a></li>
+                            <li><a href="#">09-00-000-000</a></li>
+                            <li><a href="#">09-00-000-000</a></li>
                         </ul>
                     </div>
                 </div>
@@ -79,9 +82,9 @@
                         <h4>Useful Links</h4>
                         <ul>
                             <li><a href="#">Homepage</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,8 +94,8 @@
                         <ul>
                             <li><a href="#">Help</a></li>
                             <li><a href="#">FAQ's</a></li>
-                            <li><a href="#">Shipping</a></li>
-                            <li><a href="#">Tracking ID</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -121,6 +124,19 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });        
+    </script>
+    <script>
+        const menu = document.querySelector('.menu')
+        constBOB close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open--nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open--nav')
+        })
     </script>
 </body>
 </html>

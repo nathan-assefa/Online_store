@@ -131,7 +131,8 @@ def online_shop():
             'category_id': product.category.id
             })
     # Pass the data to the template
-    return render_template('index.html', products=products_data)
+    #return render_template('index.html', products=products_data)
+    return render_template('home_page.html', products=products_data)
 
 # Single Products Page
 @app.route('/item/<string:category_id>/<string:product_id>/<string:product_name>', strict_slashes=False)

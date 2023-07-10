@@ -10,7 +10,7 @@ img {
 }
 
 .wrapper {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: flex;
   align-items: center;
   background-size: cover;
@@ -25,6 +25,7 @@ img {
   background: url("../images/registration-form-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 100px;
 }
 .inner h3 {
   text-transform: uppercase;
