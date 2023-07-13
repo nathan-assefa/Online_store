@@ -18,15 +18,13 @@ def create_app():
 
     
     app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-    app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///database.db'
-    """
     app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql+mysqldb://{}:{}@{}/{}'.format(
             getenv('ONLINE_STORE_MYSQL_USER'),
             getenv('ONLINE_STORE_MYSQL_PWD'),
             getenv('ONLINE_STORE_MYSQL_HOST'),
             getenv('ONLINE_STORE_MYSQL_DB')
             )
-    """
+    
 
     app.config["SECRET_KEY"] = "thisidsupposedtobeasecretkey"
 

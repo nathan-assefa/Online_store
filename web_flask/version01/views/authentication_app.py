@@ -4,8 +4,8 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify, m
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from web_flask.version01.forms.forms import RegisterForm
 from web_flask.version01.forms.forms import LoginForm
-#from models.user import User
-from web_flask.version01.models import User
+from models.user import User
+#from web_flask.version01.models import User
 from models import storage
 from web_flask.version01.app import db, bcrypt
 from flask import Blueprint
@@ -25,9 +25,13 @@ def register():
         new_user.last_name=form.lastname.data
         new_user.email=form.email.data
         new_user.password=hashed_password
+        """
         with current_app.app_context():
             db.session.add(new_user)
             db.session.commit()
+        """
+        storage.new(new_user)
+        storage.save()
         return redirect(url_for("app_auth.login"))
 
     return render_template("register.html", form=form)
