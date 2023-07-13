@@ -1,0 +1,115 @@
+.container {
+  max-width: 75%;
+  margin: auto;
+  height: 80vh;
+  margin-top: 5%;
+  background: white;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left, .right {
+  width: 50%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.main_image {
+  width: auto;
+  height: auto;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+}
+
+h3 {
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+p {
+  margin: 20px 0 50px 0;
+  line-height: 25px;
+}
+
+.num_of_items {
+  margin-right: 50px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: green;
+  color: white;
+  margin-top: 20%;
+  border-radius: 30px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+input[type="button"],
+input[type="number"] {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover,
+input[type="number"]:hover {
+  background-color: #ccc;
+}
+
+input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.minus,
+.plus {
+  flex: 0 0 30px;
+}
+
+.minus {
+  border-radius: 3px 0 0 3px;
+}
+
+.plus {
+  border-radius: 0 3px 3px 0;
+  margin-left: -1px;
+}
