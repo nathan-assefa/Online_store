@@ -16,15 +16,13 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
 
-    
-    app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-    app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql+mysqldb://{}:{}@{}/{}'.format(
-            getenv('ONLINE_STORE_MYSQL_USER'),
-            getenv('ONLINE_STORE_MYSQL_PWD'),
-            getenv('ONLINE_STORE_MYSQL_HOST'),
-            getenv('ONLINE_STORE_MYSQL_DB')
-            )
-    
+    app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
+    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqldb://{}:{}@{}/{}".format(
+        getenv("ONLINE_STORE_MYSQL_USER"),
+        getenv("ONLINE_STORE_MYSQL_PWD"),
+        getenv("ONLINE_STORE_MYSQL_HOST"),
+        getenv("ONLINE_STORE_MYSQL_DB"),
+    )
 
     app.config["SECRET_KEY"] = "thisidsupposedtobeasecretkey"
 
@@ -37,10 +35,10 @@ def create_app():
 
     # blueprint for authentication routes
     from web_flask.version01.views.authentication_app import app_auth
+
     app.register_blueprint(app_auth, db=db)
 
     cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
-
 
     @login_manager.user_loader
     def load_user(user_id):
@@ -48,6 +46,7 @@ def create_app():
         return user
 
     return app
+
 
 if __name__ == "__main__":
     app = create_app()
