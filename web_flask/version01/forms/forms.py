@@ -1,7 +1,13 @@
 # usr/bin/python3
 """ Forms class defination """
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, validators
+from wtforms import (
+    StringField,
+    PasswordField,
+    BooleanField,
+    SubmitField,
+    validators
+)
 from wtforms.validators import (
     InputRequired,
     Email,
@@ -33,19 +39,6 @@ class LoginForm(FlaskForm):
             raise ValidationError("Don't have an account; Register instead")
 
 
-"""
-    def validate_password(self):
-        user = storage.user_by_email(email.data)
-        if user:
-            #if not bcrypt.check_password_hash(password = user_email.password, password.data):
-            hashed_entered_password = bcrypt.hashpw(password.data.encode('utf-8'), user_email.password)
-            #if not bcrypt.check_password_hash(user_email.password, password):
-            if not hashed_entered_password == user.password:
-                raise ValidationError(
-                        "Unauthorized access")
-"""
-
-
 class RegisterForm(FlaskForm):
     firstname = StringField(
         "firstname",
@@ -68,21 +61,30 @@ class RegisterForm(FlaskForm):
             InputRequired(),
             Length(min=8, max=12),
             Regexp(
-                regex="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$",
-                message="Password must contain at least one lowercase letter, one uppercase letter, one digit, and one special character.",
-            ),
+                regex=(
+                    r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)"
+                    r"(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$"
+                ),
+                message="Password must contain at least one" +
+                        " lowercase letter, one uppercase letter," +
+                        " one digit, and one special character.",
+                ),
         ],
         render_kw={"placeholder": "Password"},
     )
     confirm_password = PasswordField(
         "confirm_password",
-        validators=[InputRequired(), Length(min=8, max=12), EqualTo("password")],
+        validators=[
+            InputRequired(),
+            Length(min=8, max=12),
+            EqualTo("password")
+        ],
         render_kw={"placeholder": "Confirm Password"},
     )
     remember = BooleanField("Remember me")
     submit = SubmitField("Register")
 
     def validate_username(self, username):
-        existing_username = User.query.filter_by(username=username.data).first()
-        if existing_username:
+        _username = User.query.filter_by(username=username.data).first()
+        if _username:
             raise ValidationError("Username already Exists")
