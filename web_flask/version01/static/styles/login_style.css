@@ -112,3 +112,17 @@ p {
 p a {
   color: #0000ff;
 }
+
+/* Mobile Responsive Styles */
+
+@media only screen and (max-width: 600px) {
+  .inner {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

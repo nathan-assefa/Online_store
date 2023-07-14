@@ -35,8 +35,12 @@ def create_app():
 
     # blueprint for authentication routes
     from web_flask.version01.views.authentication_app import app_auth
+    app.register_blueprint(app_auth)
 
-    app.register_blueprint(app_auth, db=db)
+    # blueprint for main routes
+    from web_flask.version01.views.online_store import app_main
+
+    app.register_blueprint(app_main)
 
     cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 

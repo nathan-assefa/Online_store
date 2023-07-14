@@ -58,7 +58,7 @@
     		<div class="img--wrapper">
             		{% if product.image %}
                     {% set productId = product.id %}
-                    <a href="{{ url_for('item', product_id=productId) }}">
+                    <a href="{{ url_for('app_main.item', product_id=productId) }}">
                         <img src="{{ product.image }}" alt="">
                     </a>
             		{% endif %}

@@ -17,22 +17,25 @@ from flask import (
     jsonify,
     make_response,
 )
+from flask import Blueprint
 
+
+app_main = Blueprint("app_main", __name__, url_prefix="/gebeya_hub/version01")
 
 # Landing Page
-@app.route("/", strict_slashes=False)
+@app_main.route("/", strict_slashes=False)
 def landing_page():
     return render_template("landing_page.html")
 
 
 # About us page
-@app.route("/about_us", strict_slashes=False)
+@app_main.route("/about_us", strict_slashes=False)
 def about_us():
     return render_template("about-us_page.html")
 
 
 # Home Page
-@app.route("/shop", strict_slashes=False)
+@app_main.route("/shop", strict_slashes=False)
 def online_shop():
     products = storage.all(Product)
     products_data = []
@@ -58,7 +61,7 @@ def online_shop():
 
 
 # Single Products Page
-@app.route("/item/<string:product_id>/", strict_slashes=False)
+@app_main.route("/item/<string:product_id>/", strict_slashes=False)
 def item(product_id):
     product = storage.get(Product, product_id)
     products = storage.all(Product)
@@ -107,7 +110,7 @@ def item(product_id):
 
 
 # Products in main catagories
-@app.route("/items/<string:category_id>")
+@app_main.route("/items/<string:category_id>")
 def category(category_id):
     products = storage.all(Product)
     products_data = []
@@ -131,7 +134,3 @@ def category(category_id):
                 )
     # Pass the data to the template
     return render_template("index.html", products=products_data)
-
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)

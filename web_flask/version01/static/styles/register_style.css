@@ -110,3 +110,20 @@ p {
 p a {
   color: #0000ff;
 }
+
+/* Mobile Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    min-width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: auto;
+    margin-top: 50px;
+  }
+
+  form {
+    width: 80%;
+    padding-left: 15px;
+  }
+}
