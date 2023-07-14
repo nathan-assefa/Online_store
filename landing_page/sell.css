@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.wrapper {
+.single--wrapper {
     margin-top: 1.8em;
     margin-left: 1em;
     margin-right: 1em;
@@ -18,7 +18,7 @@ body {
 a {
     text-decoration: none;
 }
-.description {
+.illustration {
     line-height: 1.2em;
     margin-top: -.4em;
 }
@@ -65,7 +65,7 @@ a {
     display: none;
 }
 
-.price {
+.pro--price {
     font-size: 2rem;
     color: rgb(209, 148, 33);
 }
@@ -104,7 +104,7 @@ button {
   margin-right: auto;
 }
 
-.card .card-content .img {
+.product--card .card-content .img {
   display: flex;
   align-items: center;
   width: 100%;
@@ -116,7 +116,7 @@ button {
   margin-bottom: 1.3em;
 }
 
-.card .card-content .img img {
+.product--card .card-content .img img {
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
@@ -124,17 +124,17 @@ button {
   object-fit: cover;
 }
 
-.card .card-description .title {
+.product--card .card-description .title {
   text-transform: uppercase;
   text-align: left;
 }
 
-.card .card-description .cart {
+.product--card .card-description .cart {
   float: right;
   cursor: pointer;
 }
 
-.card .card-detail {
+.product--card .card-detail {
   width: 100%;
 }
 
@@ -199,7 +199,7 @@ button {
 }
 
 @media screen and (min-width: 585px) {
-  .wrapper {
+  .single--wrapper {
     margin: 2em 4em;
   }
 }
@@ -224,7 +224,7 @@ button {
 }
 
 @media screen and (min-width: 777px) {
-  .container {
+  .single--container {
     margin-left: auto;
     width: 55%;
   }
@@ -243,17 +243,17 @@ button {
 }
 
 @media screen and (min-width: 882px) {
-  .wrapper {
+  .single--wrapper {
     margin: 3em 4em;
   }
   .same--prodcut {
-    flex: 1 0 300px;
+    flex-basis: 300px;
   }
   .card-content {
     top: -2.5em;
     width: 35%;
   }
-  .card .card-content .img {
+  .product--card .card-content .img {
     display: flex;
     align-items: center;
     width: 100%;
@@ -263,7 +263,7 @@ button {
     text-align: center;
   }
 
-  .card .card-content .img img {
+  .product--card .card-content .img img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;;
@@ -271,10 +271,13 @@ button {
 }
 
 @media screen and (min-width: 1075px) {
-  .wrapper {
+  .same--prodcut {
+    flex-basis: 400px;
+  }
+  .single--wrapper {
     margin: 4em 4em;
   }
-  .container {
+  .single--container {
     width: 40%;
     margin-right: 8em;
   }
@@ -282,7 +285,7 @@ button {
     margin-top: 3em;
     margin-left: 9em;
   }
-  .card .card-content .img img {
+  .product--card .card-content .img img {
     max-width: 80%;
     max-height: 80%;
     object-fit: cover;

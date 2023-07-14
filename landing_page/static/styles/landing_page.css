@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
-
 body {
     margin: 0;
-    margin-top: 6em;
     font-family: 'Poppins';
 }
 
 .swiper {
   position: relative;
-  margin-top: 1em;
-  z-index: -1;
+  margin-top: 2em;
+  z-index: 1;
   width: 100%;
   height: auto;
 }
@@ -26,7 +24,7 @@ body {
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-    display: none;
+  display: none;
 }
 
 .swiper .swiper-pagination-bullet-active {
@@ -391,11 +389,12 @@ main {
 }
 
 @media only screen and (min-width: 650px)  {
-    .swiper .swiper-button-prev,
-    .swiper .swiper-button-next {
-        display: block;
-        color: green;
-    }
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    display: block;
+    width: 10px;
+    color: green;
+  }
   .blue-container {
       margin: 0;
   }
