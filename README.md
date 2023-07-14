@@ -67,6 +67,14 @@ The application will be accessible at http://localhost:5000.
 
 Once the application is up and running, you can access it in your web browser by navigating to http://localhost:5000. From there, you can create an account, browse products, and add them to your cart.
 
+## Authors
+
+| Team Name | LinkedIn Account                           | GitHub Account                          |
+|-----------|--------------------------------------------|-----------------------------------------|
+| Nathan Assefa    | [Nathan's LinkedIn](https://www.linkedin.com/in/nathan-assefa-9ba017253/)     | [Nathan's GitHub](https://github.com/nathan-assefa)     |
+| Mahlet Seifu    | [Mahlet's LinkedIn](https://www.linkedin.com/in/mahlet-seifu-feleke) | [Mahlet's GitHub](https://github.com/Mahlet2123) |
+
+
 ## Contributing
 
 Contributions to the Online Store project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
