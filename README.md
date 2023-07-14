@@ -41,29 +41,29 @@ The GebeyaHUB project came from our desire to demonstrate our abilities and appl
 
 ### Installation
 
-1. Clone the repository:
+**1. Clone the repository:**
 
         git clone https://github.com/nathan-assefa/Online_store.git
 
-2. Navigate to the project directory:
+**2. Navigate to the project directory:**
 
         cd Online_store
 
-3. Install the dependencies:
+**3. Install the dependencies:**
 
         pip install Flask==2.0.1
         pip install SQLAlchemy==1.4.22
         pip install mysqlclient==2.1.0
 
-4. Create a MySQL database for the application.
+**4. Create a MySQL database for the application.**
 
-5. Update the database connection configuration in the config.py file:
+**5. Update the database connection configuration in the config.py file:**
 
        SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/database_name'
    
 Replace username, password, and database_name with your own MySQL database credentials.
 
-6. Start the application:
+**6. Start the application:**
 
 The application will be accessible at http://localhost:5000.
 
