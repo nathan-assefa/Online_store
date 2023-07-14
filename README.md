@@ -71,7 +71,7 @@ Once the application is up and running, you can access it in your web browser by
 
 ## Authors
 
-| Team Name | LinkedIn Account                           | GitHub Account                          |
+| Author | LinkedIn Account                           | GitHub Account                          |
 |-----------|--------------------------------------------|-----------------------------------------|
 | Nathan Assefa    | [Nathan's LinkedIn](https://www.linkedin.com/in/nathan-assefa-9ba017253/)     | [Nathan's GitHub](https://github.com/nathan-assefa)     |
 | Mahlet Seifu    | [Mahlet's LinkedIn](https://www.linkedin.com/in/mahlet-seifu-feleke) | [Mahlet's GitHub](https://github.com/Mahlet2123) |
