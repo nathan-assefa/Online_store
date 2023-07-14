@@ -8,6 +8,7 @@ Welcome to the GebeyaHub Online Store repository! This repository contains the s
 - [Features](#features)
 - [Motivation](#Motivation)
 - [Usage](#usage)
+- [Authors](#Authors)
 - [Contributing](#contributing)
 - [License](#license)
 
