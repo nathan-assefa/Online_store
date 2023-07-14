@@ -1,22 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
 body {
     margin: 0;
+    margin-top: 6em;
     font-family: 'Poppins';
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  background: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .swiper {
   position: relative;
-  margin-top: 2em;
-  z-index: 1;
+  margin-top: 1em;
+  z-index: -1;
   width: 100%;
   height: auto;
 }
