@@ -1,0 +1,101 @@
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/single_product.css') }}">
+    {% extends "base.html" %}
+
+    {% block content %}
+    </div>
+    <!-- ***** Product Area Starts ***** -->
+    <div class="single--wrapper">
+        <section class="single-item">
+            <div class="single--container flex">
+                <div class="img--header">
+                    <a href="#"><p class="visit--category">Visit the TECH store</p></a>
+                    <p class="illustration">Discover quality products designed to enhance your life. Shop now for a seamless online experience!</p>
+                    <a href="#"><p class="choice">GebeyaHub's <span>Choice</span></p></a>
+                </div>
+                <div class="left">
+                    <div class='product--card' id="first_product">
+                        <div class='card-content'>
+                            <div class='img'>
+                                <img src='https://m.media-amazon.com/images/I/61-UuuM2byL._AC_SY500._SX._UX._SY._UY_.jpg'>
+                            </div>
+                        </div>
+                        <div class='card-detail'>
+                            <div class='title'>
+                                Beats phone
+                            </div>
+                            <div class="pro--price">
+                                $78.95
+                            </div>
+                            <p class="truncated description single"><span>Details: </span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, amet! Adipisci repellat itaque assumenda asperiores deleniti nulla quisquam ex necessitatibus dolor quaerat et molestiae ullam quo ipsa, autem blanditiis! Illum fuga rerum perspiciatis consectetur iste voluptatum, possimus doloribus veritatis aut, aspernatur laborum nesciunt facere distinctio? Voluptate provident libero laboriosam ad.</p>
+                            <div class="cta-btns">
+                                <a href="#" class="secondary-cta cart_button add_to_cart ml-3" id="first">
+                                    <div class="btn--container">
+                                        <button class="common--feature add_cart">Add to Cart</button>
+                                        <button class="common--feature browse--products">Browse Other Products</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option flex">
+                        <div class="images">
+                            <div><img class="item_images" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="..." onclick="img('https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg')"/></div>
+                            <div><img class="item_images" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="..." onclick="img('https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg')"/></div>
+                            <div><img class="item_images" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="..." onclick="img('https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg')"/></div>
+                            <div><img class="item_images" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="..." onclick="img('https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg')"/></div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <!-- ***** Product Area Ends ***** -->
+        <p class="related--products">Related Products</p>
+        <div class="img--wrapper">
+            <div class="same--prodcut">
+                <div class="second">
+                    <a href="#">
+                        <img class="related--img" src="https://m.media-amazon.com/images/I/615YaAiA-ML._AC_SL1500_.jpg" alt="">
+                    </a>
+                </div>
+                    <p class="pro--price related--img--price">$122</p>
+                    <button class="common--feature view--more">View More</button>
+            </div>
+            <div class="same--prodcut">
+                <div class="second">
+                    <a href="#">
+                        <img class="related--img" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="">
+                    </a>
+                </div>
+                    <p class="pro--price related--img--price">$122</p>
+                    <button class="common--feature view--more">View More</button>
+            </div>
+            <div class="same--prodcut">
+                <div class="second">
+                    <a href="#">
+                        <img class="related--img" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="">
+                    </a>
+                </div>
+                    <p class="pro--price related--img--price">$122</p>
+                    <button class="common--feature view--more">View More</button>
+            </div>
+            <div class="same--prodcut">
+                <div class="second">
+                    <a href="#">
+                        <img class="related--img" src="https://m.media-amazon.com/images/I/81EqEzFjSHL._AC_SL1500_.jpg" alt="">
+                    </a>
+                </div>
+                    <p class="pro--price related--img--price">$122</p>
+                    <button class="common--feature view--more">View More</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function img(anything) {
+            document.querySelector('.slide').src = anything;
+        }
+        function change(change) {
+            const line = document.querySelector('.home');
+            line.style.background = change;
+        }
+    </script>
+    {% endblock %}
