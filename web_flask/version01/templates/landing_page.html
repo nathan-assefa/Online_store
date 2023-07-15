@@ -1,14 +1,15 @@
-{% extends "base.html" %}
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='styles/landing_page.css') }}">-->
+    {% extends "base.html" %}
 
-{% block content %}       
-<div class="swiper">
+    {% block content %}    
+    <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="/static/images/Landing_page_image-01.jpg"></div>
-            <div class="swiper-slide"><img src="/static/images/Landing_page_image-02.jpg"></div>
-            <div class="swiper-slide"><img src="/static/images/Landing_page_image-03.jpg"></div>
-            <div class="swiper-slide"><img src="/static/images/Landing_page_image-04.jpg"></div>
+            <div class="swiper-slide"><img src="static/images/Landing_page_image-01.jpg"></div>
+            <div class="swiper-slide"><img src="static/images/Landing_page_image-02.jpg"></div>
+            <div class="swiper-slide"><img src="static/images/Landing_page_image-03.jpg"></div>
+            <div class="swiper-slide"><img src="static/images/Landing_page_image-04.jpg"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -26,10 +27,10 @@
                     Attractive discounts and competitive prices..
                 </p>
             </div>
-            <div class="cta-btns">
-                <a href="{{ url_for('app_main.online_shop')}}" class="primary-cta">Browse our collection</a>
-                <a href="#" class="secondary-cta">
-                    <span>Add to cart</span>
+            <div class="cta-btn">
+                <a href="/items" class="prim-cta">Browse our collection</a>
+                <a href="#" class="sec-cta">
+                    <span>Signin Now</span>
                     <svg viewBox="0 0 19 8" fill="none">
                         <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="black"/>
                     </svg>
@@ -37,57 +38,56 @@
             </div>
         </div>
         <div class="right-col">
-            <div style="background-image: url('/static/images/items0A.jpg')" class="card card1">
+            <div style="background-image: url('static/images/items0A.jpg')" class="picture card1">
                 <div class="card-details">
                     <div>
 				        <a href="#" class="product-title">Discover More</a>
                     </div>
                 </div>
             </div>
-            <div style="background-image: url('/static/images/items0C.jpg')" class="card card2">
+            <div style="background-image: url('static/images/items0C.jpg')" class="picture card2">
             </div>
-            <div style="background-image: url('/static/images/items0D.jpg')" class="card card3">
+            <div style="background-image: url('static/images/items0D.jpg')" class="picture card3">
             </div>
         </div>
     </main>
     </div>
-    <div class="product-categories">
-        <h2>Product Categories</h2>
-        <ul class="categories">
-            <li>
-                <i class="fas fa-shoe-prints category-icon"></i>
-                <span class="category-name">Shoes</span>
+    <div class="blue-container">
+        <div class="container--2">
+            <ul>
+                <li>
+                    <i class="fas fa-shoe-prints category-icon"></i>
+                    <span class="category-name">Shoes</span>
+                </li>
+                <li>
+                    <i class="fas fa-tshirt category-icon"></i>
+                    <span class="category-name">Dressings</span>
+                </li>
+                <li>
+                    <i class="fas fa-gem category-icon"></i>
+                    <span class="category-name">Jewelry</span>
+                </li>
+                <li>
+                    <i class="fas fa-laptop category-icon"></i>
+                    <span class="category-name">Tech Items</span>
             </li>
-            <li>
-                <i class="fas fa-tshirt category-icon"></i>
-                <span class="category-name">Dressings</span>
-            </li>
-            <li>
-                <i class="fas fa-gem category-icon"></i>
-                <span class="category-name">Jewelry</span>
-            </li>
-            <li>
-                <i class="fas fa-laptop category-icon"></i>
-                <span class="category-name">Tech Items</span>
-            </li>
-        </ul>
+            </ul>
+        </div>
     </div>
-    <div class="wrapper">
     <div class="gray-container">
-        <h2>Meet the Team</h2>
-        <div class="testimonial-container">
-            <ul class="testimony">
-                <li class="users-testimony">
+        <div class="container--2">
+            <ul>
+                <li>
                     <figure>
-                        <img class="user-image" src="/static/images/5789390670199370758_120.jpg" alt="User testimonial picture">
-                        <blockquote>She is a talented full-stack developer with a passion for building robust and scalable web applications.</blockquote>
+                        <img class="testimony--img" src="static/images/mahi.jpg" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
                         <figcaption>- Mahlet Seifu</figcaption>
                     </figure>
                 </li>
-                <li class="users-testimony">
+                <li>
                     <figure>
-                        <img class="user-image" src="/static/images/T0195LMKD1R-U03E6A7DYHZ-6bb6cd124b6e-512.jpg" alt="User testimonial picture">
-                        <blockquote>He is a highly skilled full-stack developer who excels in crafting innovative and efficient solutions.</blockquote>
+                        <img class="testimony--img" src="static/images/nathan.jpg" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
                         <figcaption>- Nathan Assefa</figcaption>
                     </figure>
                 </li>
@@ -96,43 +96,58 @@
     </div>
 
     <!-- ***** Contact Area Starts ***** -->
-    <div class="contact-us">
-        <div class="left-side">
-        <div class="section-heading">
-            <h2>Contact Us. We'd Love to Hear from You!</h2>
-            <span>Providing exceptional customer service is our top priority.</span>
-        </div>
-        <form id="contact" action="" method="post">
-            <div class="contact-form">
-                <div class="user-details">
-                    <fieldset>
-                        <input name="name" type="text" id="name" placeholder="Your name" required="">
-                    </fieldset>
-                </div>
-                <div class="user-details">
-                    <fieldset>
-                        <input name="email" type="text" id="email" placeholder="Your email" required="">
-                    </fieldset>
-                </div>
-                <div class="user-details">
-                    <fieldset>
-                        <textarea name="message" rows="6" id="message" placeholder="Your message" required=""></textarea>
-                    </fieldset>
-                </div>
-                <div class="user-details">
-                    <fieldset>
-                        <input type="submit" class="send-message-cta" value="Send message">
-                    </fieldset>
-                </div>
+    <section class="contact-section">
+        <div class="container--2">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
             </div>
-        </form>
-        </div>
-        <div class="right-side">
-            <div>
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.585258138516!2d38.74214727546166!3d9.010255289281213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDAnMzYuOSJOIDM4wrA0NCc0MS4wIkU!5e0!3m2!1sen!2set!4v1688555575402!5m2!1sen!2set" allowfullscreen></iframe>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+
         </div>
-    </div>
-    </div>
-    <!-- ***** Contact Area Ends ***** -->
-{% endblock %}
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+        // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open--nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open--nav')
+        })
+    </script>
+    {% endblock %}

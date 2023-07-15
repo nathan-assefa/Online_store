@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GebeyaHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/sub_page.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/landing_page.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bottom_page.css') }}">
+</head>
+<body>
+    <!--<div class="swiper">-->
+        <div class="wrapper">
+            <header>
+                <div class="logo"><p>Gebeya<span>Hub</span></p></div>
+                <nav>
+                    <svg id="close" class="close" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 0.25C13.2861 0.25 10.1443 1.20305 7.47199 2.98862C4.79969 4.77419 2.71689 7.31209 1.48697 10.2814C0.257041 13.2507 -0.0647633 16.518 0.562247 19.6702C1.18926 22.8224 2.73692 25.7179 5.00952 27.9905C7.28213 30.2631 10.1776 31.8108 13.3298 32.4378C16.482 33.0648 19.7493 32.743 22.7186 31.513C25.6879 30.2831 28.2258 28.2003 30.0114 25.528C31.797 22.8557 32.75 19.7139 32.75 16.5C32.75 14.366 32.3297 12.2529 31.5131 10.2814C30.6964 8.30985 29.4994 6.51847 27.9905 5.00952C26.4815 3.50056 24.6902 2.3036 22.7186 1.48696C20.7471 0.670319 18.634 0.25 16.5 0.25V0.25ZM20.9038 18.5963C21.0561 18.7473 21.177 18.927 21.2595 19.1251C21.342 19.3231 21.3844 19.5355 21.3844 19.75C21.3844 19.9645 21.342 20.1769 21.2595 20.3749C21.177 20.573 21.0561 20.7527 20.9038 20.9038C20.7527 21.0561 20.573 21.177 20.3749 21.2594C20.1769 21.3419 19.9645 21.3844 19.75 21.3844C19.5355 21.3844 19.3231 21.3419 19.1251 21.2594C18.9271 21.177 18.7473 21.0561 18.5963 20.9038L16.5 18.7913L14.4038 20.9038C14.2527 21.0561 14.073 21.177 13.8749 21.2594C13.6769 21.3419 13.4645 21.3844 13.25 21.3844C13.0355 21.3844 12.8231 21.3419 12.6251 21.2594C12.427 21.177 12.2473 21.0561 12.0963 20.9038C11.9439 20.7527 11.8231 20.573 11.7406 20.3749C11.6581 20.1769 11.6156 19.9645 11.6156 19.75C11.6156 19.5355 11.6581 19.3231 11.7406 19.1251C11.8231 18.927 11.9439 18.7473 12.0963 18.5963L14.2088 16.5L12.0963 14.4038C11.7903 14.0978 11.6184 13.6827 11.6184 13.25C11.6184 12.8173 11.7903 12.4022 12.0963 12.0963C12.4023 11.7903 12.8173 11.6184 13.25 11.6184C13.6827 11.6184 14.0978 11.7903 14.4038 12.0963L16.5 14.2088L18.5963 12.0963C18.9023 11.7903 19.3173 11.6184 19.75 11.6184C20.1827 11.6184 20.5978 11.7903 20.9038 12.0963C21.2098 12.4022 21.3817 12.8173 21.3817 13.25C21.3817 13.6827 21.2098 14.0978 20.9038 14.4038L18.7913 16.5L20.9038 18.5963Z" fill="black"/>
+                    </svg>
+                    <ul class="primary-nav">
+                        <li><a href="{{ url_for('online_shop') }}" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Products</a>
+                            <ul class="dropdown-menu">
+                                {% set categoryDressing = '154802f9-71dd-4903-b820-a7bcc7190c9b' %}
+                                {% set categoryShoe = "6954a718-d0d2-4580-bd82-c28af5a43632" %}
+                                {% set categoryJwellery = "3b362581-2f5a-4a5f-8e20-13a8b4637b5c" %}
+                                {% set categoryTech = "8b045d3f-a6ba-4d80-b7cd-cbc802bce398" %}
+                                <li><a href="{{ url_for('category', category_id=categoryDressing) }}">Dressing</a></li>
+                                <li><a href="{{ url_for('category', category_id=categoryShoe) }}">Shoe</a></li>
+                                <li><a href="{{ url_for('category', category_id=categoryJwellery) }}">Jwellery</a></li>
+                                <li><a href="{{ url_for('category', category_id=categoryTech) }}">Tech</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{url_for('register')}}">Register</a></li>
+                        <li><a href="{{url_for('login')}}">Login</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/static/images/Landing_page_image-01.jpg"></div>
+            <div class="swiper-slide"><img src="/static/images/Landing_page_image-02.jpg"></div>
+            <div class="swiper-slide"><img src="/static/images/Landing_page_image-03.jpg"></div>
+            <div class="swiper-slide"><img src="/static/images/Landing_page_image-04.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="wrapper">
+    <main>
+        <div class="left-col">
+            <div class="news">
+                <p class="employees">30%</p>
+                <p class="details">
+                    Discover the Best Deals" - Highlighting that GebeyaHub offers <strong>30%</strong> discount.
+                    Attractive discounts and competitive prices..
+                </p>
+            </div>
+            <div class="cta-btns">
+                <a href="{{ url_for('online_shop')}}" class="primary-cta">Browse our collection</a>
+                <a href="#" class="secondary-cta">
+                    <span>Add to cart</span>
+                    <svg viewBox="0 0 19 8" fill="none">
+                        <path d="M18.3536 4.35355C18.5488 4.15829 18.5488 3.84171 18.3536 3.64645L15.1716 0.464466C14.9763 0.269204 14.6597 0.269204 14.4645 0.464466C14.2692 0.659728 14.2692 0.976311 14.4645 1.17157L17.2929 4L14.4645 6.82843C14.2692 7.02369 14.2692 7.34027 14.4645 7.53553C14.6597 7.7308 14.9763 7.7308 15.1716 7.53553L18.3536 4.35355ZM0 4.5H18V3.5H0V4.5Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="right-col">
+            <div style="background-image: url('/static/images/items0A.jpg')" class="card card1">
+                <div class="card-details">
+                    <div>
+				        <a href="#" class="product-title">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image: url('/static/images/items0C.jpg')" class="card card2">
+            </div>
+            <div style="background-image: url('/static/images/items0D.jpg')" class="card card3">
+            </div>
+        </div>
+    </main>
+    <!-- ***** user testimonial Area Starts ***** -->
+    <div class="gray-container">
+        <div class="testimonial-container">
+            <ul class="testimony">
+                <li class="users-testimony">
+                    <figure>
+                        <img class="user-image" src="images/user1.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li class="users-testimony">
+                    <figure>
+                        <img class="user-image" src="images/user2.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ***** Contact Area Starts ***** -->
+    <div class="contact-us">
+        <div class="left-side">
+        <div class="section-heading">
+            <h2>Contact Us. We'd Love to Hear from You!</h2>
+            <span>Providing exceptional customer service is our top priority.</span>
+        </div>
+        <form id="contact" action="" method="post">
+            <div class="contact-form">
+                <div class="user-details">
+                    <fieldset>
+                        <input name="name" type="text" id="name" placeholder="Your name" required="">
+                    </fieldset>
+                </div>
+                <div class="user-details">
+                    <fieldset>
+                        <input name="email" type="text" id="email" placeholder="Your email" required="">
+                    </fieldset>
+                </div>
+                <div class="user-details">
+                    <fieldset>
+                        <textarea name="message" rows="6" id="message" placeholder="Your message" required=""></textarea>
+                    </fieldset>
+                </div>
+                <div class="user-details">
+                    <fieldset>
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="right-side">
+            <div>
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.585258138516!2d38.74214727546166!3d9.010255289281213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDAnMzYuOSJOIDM4wrA0NCc0MS4wIkU!5e0!3m2!1sen!2set!4v1688555575402!5m2!1sen!2set" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ***** Contact Area Ends ***** -->
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-item">
+                        <h4>Our Address</h4>
+                        <ul>
+                            <li><a href="#">Lideta, Addis Ababa, Ethiopia</a></li>
+                            <li><a href="#">gebeyahub@company.com</a></li>
+                            <li><a href="#">09-02-003-490</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-item">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="#">Dressings</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Jwellery</a></li>
+                            <li><a href="#">Tech</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-item">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Homepage</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-item">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Tracking ID</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});        
+    </script>
+</body>
+</html>
