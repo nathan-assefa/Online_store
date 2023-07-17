@@ -29,6 +29,8 @@ CREATE TABLE `cart_items` (
   `id` varchar(60) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
+  `name` varchar(128) DEFAULT NULL,
+  `price` float DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `cart_id` (`cart_id`),
   KEY `product_id` (`product_id`),
@@ -43,6 +45,7 @@ CREATE TABLE `cart_items` (
 
 LOCK TABLES `cart_items` WRITE;
 /*!40000 ALTER TABLE `cart_items` DISABLE KEYS */;
+INSERT INTO `cart_items` VALUES (7,'02567028-27d6-4d89-818c-f4f7b5bfa280','0e79c2a9-695e-4154-a113-9131f26f187e','059b40c5-194d-454f-9c53-d97718dfa87f','2023-07-17 08:28:07','2023-07-17 08:28:07','smartwatch',92),(4,'02567028-27d6-4d89-818c-f4f7b5bfa280','094abe3c-8b40-43ef-a85e-7895a3e4ea11','10b64782-af66-49e2-80c9-986f342522f3','2023-07-17 09:08:42','2023-07-17 09:08:42','bra',13.22),(2,'02567028-27d6-4d89-818c-f4f7b5bfa280','6e68fbcc-74cc-4fa5-9f5d-f9417d5235df','6d9e249c-5666-4421-925b-44fba34ac13f','2023-07-17 09:27:01','2023-07-17 09:27:01','trouser',16.22),(2,'02567028-27d6-4d89-818c-f4f7b5bfa280','c7e2e17b-b137-40b6-bdad-a10dbba62022','852478b9-bc6f-48f5-85b8-aac49c214012','2023-07-17 09:26:40','2023-07-17 09:26:40','smartphone',592),(1,'02567028-27d6-4d89-818c-f4f7b5bfa280','521b4acb-003b-401f-b34e-780b94286e91','894384fb-5e36-4ab7-9f7d-868f3081ce96','2023-07-17 09:26:24','2023-07-17 09:26:24','smartphone',30.5),(2,'02567028-27d6-4d89-818c-f4f7b5bfa280','2ea61e33-9413-4cdf-8845-8f0c90b21abd','a3fab76a-a6cd-40c6-a997-12b3cf00d9bb','2023-07-17 09:26:11','2023-07-17 09:26:11','earring',67),(1,'02567028-27d6-4d89-818c-f4f7b5bfa280','521b4acb-003b-401f-b34e-780b94286e91','c3b45597-ab73-451c-9be1-ff6a9c1892b2','2023-07-17 09:26:23','2023-07-17 09:26:23','smartphone',30.5),(2,'02567028-27d6-4d89-818c-f4f7b5bfa280','6ca2f161-9b15-4005-966c-746e8f0689f6','e52230da-7db3-4d7c-9d82-6f47bd9f73d2','2023-07-17 09:26:52','2023-07-17 09:26:52','sandal',24.95),(2,'02567028-27d6-4d89-818c-f4f7b5bfa280','7eb44990-024d-45c1-a08d-8a37fc15c2a0','f637f3fa-e41f-4ce2-9028-cfc3ecac2d1a','2023-07-17 11:05:30','2023-07-17 11:05:30','jacket',44.2);
 /*!40000 ALTER TABLE `cart_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,6 +74,7 @@ CREATE TABLE `carts` (
 
 LOCK TABLES `carts` WRITE;
 /*!40000 ALTER TABLE `carts` DISABLE KEYS */;
+INSERT INTO `carts` VALUES ('active','c5d4ae67-01f2-4b3e-a3c7-2099edc358ff','02567028-27d6-4d89-818c-f4f7b5bfa280','2023-07-17 08:27:59','2023-07-17 08:27:59');
 /*!40000 ALTER TABLE `carts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -281,6 +285,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES ('Nathan Assefa ',NULL,'nnathanassefa@gmail.com','$2b$12$RsBCzT./emsWmZczJ52kqe/V.8b2fHlGbGPNBxtyfVAAmd1JC4BDS','c5d4ae67-01f2-4b3e-a3c7-2099edc358ff','2023-07-17 08:27:56','2023-07-17 08:27:56');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -293,4 +298,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-26 14:39:38
+-- Dump completed on 2023-07-17 14:31:05
