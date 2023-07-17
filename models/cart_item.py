@@ -4,7 +4,7 @@
 
 from models.base_model import BaseModel, Base
 #import models
-from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy import Column, String, Integer, ForeignKey, Float
 
 
 class CartItem(BaseModel, Base):
@@ -12,6 +12,8 @@ class CartItem(BaseModel, Base):
     __tablename__ = 'cart_items'
 
     quantity = Column(Integer, nullable=False)
+    price = Column(Float)
+    name = Column(String(128))
     cart_id = Column(
             String(60),
             ForeignKey('carts.id', ondelete='CASCADE'),

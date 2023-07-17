@@ -31,32 +31,29 @@ def create_cart_item(cart_id):
     """ This function retuns and sends cart_items from and into database """
     cart = storage.get(Cart, cart_id)
     new_cart_items = request.get_json()
+
     if not cart:
         abort(404)
 
-    elif request.method == "POST":
-        if not cart:
-            abort(404)
+    if not new_cart_items:
+        return jsonify({"error": "Not a JSON"}), 400
 
-        if not new_cart_items:
-            return jsonify({"error": "Not a JSON"}), 400
+    elif 'product_id' not in new_cart_items:
+        return jsonify({"error": "Missing product_id"}), 400
 
-        elif 'product_id' not in new_cart_items:
-            return jsonify({"error": "Missing product_id"}), 400
+    elif not storage.get(Product, new_cart_items['product_id']):
+        abort(404)
 
-        elif not storage.get(Product, new_cart_items['product_id']):
-            abort(404)
+    elif 'quantity' not in new_cart_items:
+        return jsonify({"error": "Missing quantity"}), 400
 
-        elif 'quantity' not in new_cart_items:
-            return jsonify({"error": "Missing quantity"}), 400
+    # adding cart_id to keep integrity between carts and cart_items table
+    new_cart_items['cart_id'] = cart_id
+    created_cart_item = CartItem(**new_cart_items)
+    storage.new(created_cart_item)
+    storage.save()
 
-        # adding cart_id to keep integrity between carts and cart_items table
-        new_cart_items['cart_id'] = cart_id
-        created_cart_item = CartItem(**new_cart_items)
-        storage.new(created_cart_item)
-        storage.save()
-
-        return jsonify(created_cart_item.to_dict()), 201
+    return jsonify(created_cart_item.to_dict()), 201
 
 
 @app_views.route(

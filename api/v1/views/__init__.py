@@ -22,3 +22,4 @@ from api.v1.views.cart_items import *
 from api.v1.views.orders import *
 from api.v1.views.order_items import *
 from api.v1.views.reviews import *
+from api.v1.views.urls import *

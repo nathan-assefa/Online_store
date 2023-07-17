@@ -28,7 +28,7 @@ def get_carts(user_id):
         "/users/<user_id>/carts", methods=['POST'], strict_slashes=False
         )
 def post_cart(user_id):
-    """ This function creates a new cart for a user sends cart into database """
+    """ This function creates a new cart for a user """
     user = storage.get(User, user_id)
     new_cart = {}
 
@@ -51,18 +51,23 @@ def post_cart(user_id):
         strict_slashes=False
         )
 def cart(cart_id):
-    """This function returns and deletes a cart"""
+    """This function deletes all items within a cart"""
     cart = storage.get(Cart, cart_id)
     if cart and request.method == 'GET':
-        return jsonify(cart.to_dict())
+        cart_items = [
+                cart_item.to_dict() for cart_item in cart.cart_items
+                ]
+        return jsonify(cart_items)
 
     elif cart and request.method == "DELETE":
-        cart.delete()
+        for cart_item in cart.cart_items:
+            cart_item.delete()
         storage.save()
         return jsonify({})
 
     else:
         abort(404)
+
 
 @app_views.route('/carts/<cart_id>', methods=['PUT'], strict_slashes=False)
 def update_cart_status(cart_id):
@@ -76,7 +81,7 @@ def update_cart_status(cart_id):
     new_status = request.get_json('status')
 
     if not new_status:
-        return jsonify({'error': 'Not a Json'}) 
+        return jsonify({'error': 'Not a Json'})
 
     # Update the cart's status
     cart.status = new_status['status']

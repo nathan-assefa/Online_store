@@ -278,7 +278,8 @@ class DBStorage:
         database connection. This helps maintain consistency and allows multiple
         sessions to work with different database connections concurrently.
         """
-                
+    
+
     def user_by_email(self, email):
         """ A method to retrieve a user by email """
         user =  self.__session.query(User).filter(User.email == email).first()
@@ -286,9 +287,34 @@ class DBStorage:
             return user
         return None
 
+
     def user_by_id(self, user_id):
         """ A method to retrieve a user by ID """
         user =  self.__session.query(User).filter(User.id == user_id).first()
         if user:
             return user
         return None
+
+    def serve_user(self, user):
+        default_cart = Cart()
+        default_cart.user_id = user.id
+        self.new(default_cart)
+        self.save()
+        return default_cart
+    """ 
+    def serve_user(self, user):
+        # Check if the user has a previous cart
+        previous_cart = self.get(User, user.id)
+
+        if previous_cart:
+            # Return the previous cart if it exists
+            return previous_cart
+        else:
+            # Create a new cart for the user
+            default_cart = Cart()
+            default_cart.user_id = user.id
+            self.new(default_cart)
+            self.save()
+            return default_cart
+    """    
+
