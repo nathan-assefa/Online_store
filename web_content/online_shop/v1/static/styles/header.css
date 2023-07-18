@@ -137,10 +137,19 @@ header a {
 }
 
 .menu {
-    width: 3rem;
-    margin-top: -.6em;
-    stroke: black;
+   width: 3em;
+   position: fixed;
+   top: 2em;
+   right: 2.2em;
+   stroke: black;
 }
+
+/*
+.menu {
+    width: 3rem;
+    margin-top: -2em;
+    stroke: black;
+}*/
 
 .menu path {
     fill: black;;

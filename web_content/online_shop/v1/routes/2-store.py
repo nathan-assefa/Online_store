@@ -20,7 +20,8 @@ app_store = Blueprint('app_store', __name__, url_prefix='/store/v1')
 
 @app_store.route('/', strict_slashes=False)
 def landing_page():
-    return render_template('landing_page.html')
+    cart_id = session['cart'].get('id')
+    return render_template('landing_page.html', cart=cart_id)
 
 
 @app_store.route('/cart', strict_slashes=False)
@@ -33,6 +34,7 @@ def single_product():
 def single_prodcuct():
     products = storage.all(Product)
     products_data = []
+    cart_id = session['cart'].get('id')
 
     for product in products.values():
         if product.urls:
@@ -48,12 +50,13 @@ def single_prodcuct():
             'id': product.id,
             })
     # Pass the data to the template
-    return render_template('all_product.html', products=products_data)
+    return render_template('all_product.html', products=products_data, cart=cart_id)
 
 
 @app_store.route('/order_page', strict_slashes=False)
 def order_page():
-    return render_template('try_landing_page.html')
+    cart_id = session['cart'].get('id')
+    return render_template('try_landing_page.html', cart=cart_id)
 
 
 # Single Products Page

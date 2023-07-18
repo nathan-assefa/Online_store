@@ -19,9 +19,21 @@
 -- Table structure for table `cart_items`
 --
 
+
+-- Create database + user if doesn't exist
+CREATE DATABASE IF NOT EXISTS online_store_db;
+-- Creating a new user
+CREATE USER IF NOT EXISTS 'online_store'@'localhost' IDENTIFIED BY 'online_store_pwd';
+-- Granting all privileges on the database
+GRANT ALL PRIVILEGES ON online_store_db.* TO 'online_store'@'localhost';
+-- Granting SELECT privileges on the database
+GRANT SELECT ON performance_schema.* TO 'online_store'@'localhost';
+FLUSH PRIVILEGES;
+
+USE online_store_db;
+
+
 DROP TABLE IF EXISTS `cart_items`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `cart_items` (
   `quantity` int NOT NULL,
   `cart_id` varchar(60) NOT NULL,
@@ -36,8 +48,7 @@ CREATE TABLE `cart_items` (
   KEY `product_id` (`product_id`),
   CONSTRAINT `cart_items_ibfk_1` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`) ON DELETE CASCADE,
   CONSTRAINT `cart_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+);
 
 --
 -- Dumping data for table `cart_items`
@@ -65,7 +76,7 @@ CREATE TABLE `carts` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `carts_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +102,7 @@ CREATE TABLE `categories` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,7 +135,7 @@ CREATE TABLE `order_items` (
   KEY `product_id` (`product_id`),
   CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE,
   CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -153,7 +164,7 @@ CREATE TABLE `orders` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -184,7 +195,7 @@ CREATE TABLE `products` (
   PRIMARY KEY (`id`),
   KEY `category_id` (`category_id`),
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,7 +229,7 @@ CREATE TABLE `reviews` (
   CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE,
   CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   CONSTRAINT `reviews_chk_1` CHECK (((`rating` >= 0) and (`rating` <= 5)))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -247,7 +258,7 @@ CREATE TABLE `urls` (
   PRIMARY KEY (`id`),
   KEY `product_id` (`product_id`),
   CONSTRAINT `urls_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +287,7 @@ CREATE TABLE `users` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

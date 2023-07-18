@@ -148,6 +148,7 @@ p.details {
     align-items: end;
     background-size: 150%;
     transition: background-size 800ms;
+    background-repeat: no-repeat;
 }
 
 .card1 {
@@ -176,6 +177,7 @@ p.details {
     align-items: center;
     justify-content: space-between;
     transition: transform 800ms;
+    margin-top: 8.5em;
 }
 
 .card-details a {
@@ -367,6 +369,7 @@ iframe {
 h2 {
   font-size: 2em;
 }
+
 @keyframes reveal {
     from {
         transform: scaleY(1);
