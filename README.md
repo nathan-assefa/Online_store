@@ -54,6 +54,8 @@ The GebeyaHUB project came from our desire to demonstrate our abilities and appl
         pip install Flask==2.0.1
         pip install SQLAlchemy==1.4.22
         pip install mysqlclient==2.1.0
+        pip install flask-login
+        pip install flask-bcrypt
 
 **4. Create a MySQL database for the application.**
 
