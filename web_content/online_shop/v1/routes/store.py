@@ -6,6 +6,7 @@ from models.product import Product
 from models.category import Category
 from models.url import Url
 from flask import Flask, render_template, Blueprint, session
+import uuid
 from flask_login import (
     UserMixin,
     login_user,
@@ -20,17 +21,20 @@ app_store = Blueprint('app_store', __name__, url_prefix='/store/v1')
 
 @app_store.route('/', strict_slashes=False)
 def landing_page():
-    return render_template('landing_page.html')
+    cache_id = str(uuid.uuid4())
+    return render_template('landing_page.html', cache_id=cache_id)
 
 
 @app_store.route('/cart', strict_slashes=False)
 def single_product():
     cart_id = session['cart'].get('id')
-    return render_template('cart.html', cart=cart_id)
+    cache_id = str(uuid.uuid4())
+    return render_template('cart.html', cart=cart_id, cache_id=cache_id)
 
 
 @app_store.route('/items', strict_slashes=False)
 def single_prodcuct():
+    cache_id = str(uuid.uuid4())
     products = storage.all(Product)
     products_data = []
 
@@ -48,18 +52,20 @@ def single_prodcuct():
             'id': product.id,
             })
     # Pass the data to the template
-    return render_template('all_product.html', products=products_data)
+    return render_template('all_product.html', products=products_data, cache_id=cache_id)
 
 
 @app_store.route('/order_page', strict_slashes=False)
 def order_page():
-    return render_template('try_landing_page.html')
+    cache_id = str(uuid.uuid4())
+    return render_template('try_landing_page.html', cache_id=cache_id)
 
 
 # Single Products Page
 @app_store.route('/item/<string:product_id>/', strict_slashes=False)
 @login_required
 def item(product_id):
+    cache_id = str(uuid.uuid4())
     product = storage.get(Product, product_id)
     products = storage.all(Product)
     product_data = {}
@@ -99,5 +105,6 @@ def item(product_id):
     # Pass the data to the template
     return render_template('single_product.html',
             product=product_data,
-            related_products=related_products_data
+            related_products=related_products_data,
+            cache_id=cache_id
             )

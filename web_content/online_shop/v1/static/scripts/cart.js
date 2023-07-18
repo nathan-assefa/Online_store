@@ -37,7 +37,7 @@ $(document).ready(function() {
 	  total_cart_value(response);
         }
 
-        const url = `http://54.237.108.7/api/v1/carts/${cart}/cart_items`;
+        const url = `http://localhost:5001/api/v1/carts/${cart}/cart_items`;
         let cartItem;
         $.ajax({
           url: url,
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
         function updateQuantity(newQuantity, cartItemId) {
           $.ajax({
-            url: `http://54.237.108.7/api/v1/cart_items/${cartItemId}`,
+            url: `http://localhost:5001/api/v1/cart_items/${cartItemId}`,
             method: 'PUT',
             dataType: 'json',
             contentType: 'application/json',
@@ -91,7 +91,7 @@ $(document).ready(function() {
 
       function clear_cart() {
         $.ajax({
-          url: `http://54.237.108.7/api/v1/carts/${cart}`,
+          url: `http://localhost:5001/api/v1/carts/${cart}`,
           method: 'DELETE',
           dataType: 'json',
           success: function(response) {
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
       function allItems(callback) {
         $.ajax({
-          url: `http://54.237.108.7/api/v1/carts/${cart}`,
+          url: `http://localhost:5001/api/v1/carts/${cart}`,
           method: 'GET',
           dataType: 'json',
           success: function(response) {
@@ -203,7 +203,7 @@ $(document).ready(function() {
 
       function updateQuantity(newQuantity, cartItemId) {
         $.ajax({
-          url: `http://54.237.108.7/api/v1/cart_items/${cartItemId}`,
+          url: `http://localhost:5001/api/v1/cart_items/${cartItemId}`,
           method: 'PUT',
           dataType: 'json',
           contentType: 'application/json',
@@ -222,7 +222,7 @@ $(document).ready(function() {
 
       function removeItem(cartItemId) {
         $.ajax({
-          url: `http://54.237.108.7/api/v1/cart_items/${cartItemId}`,
+          url: `http://localhost:5001/api/v1/cart_items/${cartItemId}`,
           method: 'DELETE',
           dataType: 'json',
           success: function(response) {
