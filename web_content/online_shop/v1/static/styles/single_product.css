@@ -117,7 +117,7 @@ a {
 }
 
 .product--card .card-content .img {
-  display: flex;
+  display: none;
   align-items: center;
   width: 100%;
   height: 20em;
@@ -134,6 +134,44 @@ a {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
+}
+
+.for--mobile {
+    width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  object-fit: cover
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  display: none;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: green;
+}
+
+.card-detail {
+  margin-top: 5em;
 }
 
 .product--card .card-description .title {
@@ -198,8 +236,8 @@ a {
 }
 .related--img--price {
   position: absolute;
-  top: .9em;
-  left: 2em;
+  top: .2em;
+  left: 1.38em;
   margin-top: -.7em;
   text-align: center;
   font-size: 1.5em;
@@ -259,6 +297,18 @@ a {
     top: -2em;
   }
 
+  .card-detail {
+    margin-top: 2em;
+  }
+
+  .swiper {
+    margin-top: 5em;
+  }
+
+  .swiper-slide img {
+    margin-top: 5em;
+  }
+
   .choice {
     width: 13em;
     padding-left: 3em;
@@ -269,6 +319,9 @@ a {
 }
 
 @media screen and (min-width: 882px) {
+  .for--mobile {
+    display: none;
+  }
   .single--wrapper {
     margin: 3em 4em;
   }

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/static/styles/categories.css">
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="products--in--categry">
+        {% for product in products %}
+           <div class="item--wrap">
+                <div class="img--wrap">
+                    <a href="/store/v1/item/{{ product.id }}"><img src="{{ product.image }}" alt="" class="category--img"></a>
+                </div>
+                <p class="item--descriptioin">{{ product.description }}</p>
+                <div class="category--item--price">${{ product.price }}</div>
+                <a href="/store/v1/item/{{ product.id }}" class="category--item--btn"><button>explore</button></a>
+           </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -6,7 +6,7 @@ body {
     font-family: 'Poppins';
 }
 
-.swiper {
+.swiper--for--landing {
   position: relative;
   top: 7em;
   z-index: 1;
@@ -14,11 +14,11 @@ body {
   height: auto;
 }
 
-.swiper-wrapper img {
+.swiper--for--landing .swiper-wrapper img {
   width: 100%;
 }
 
-.swiper-slide img {
+.swiper--for--landing .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -321,6 +321,11 @@ figcaption {
   font-size: 50px;
   color: rgb(79, 77, 77);
   margin-bottom: .2em;
+  cursor: pointer;
+}
+
+a {
+   text-decoration: none;
 }
 .category-name {
   color: black;
@@ -391,8 +396,8 @@ main {
 }
 
 @media only screen and (min-width: 650px)  {
-    .swiper .swiper-button-prev,
-    .swiper .swiper-button-next {
+    .swiper--for--landing .swiper-button-prev,
+    .swiper--for--landing .swiper-button-next {
         display: block;
         color: green;
     }

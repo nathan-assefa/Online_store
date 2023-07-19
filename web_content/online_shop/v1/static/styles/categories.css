@@ -1,0 +1,87 @@
+.products--in--categry {
+    font-family:  white;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    padding: 1em;
+    margin-top: 8em;
+    margin-bottom: 7em;
+}
+
+.item--wrap {
+    box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
+    background: rgb(255, 253, 253);
+    flex-basis: 300px;
+    width: 40%;
+    min-height: 10em;
+    margin: 1em auto;
+    padding-top: 1em;
+    padding: 1em;
+}
+
+.img--wrap {
+    width: 100%;
+    height: 8em;
+}
+
+.category--img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.item--descriptioin {
+  text-transform: lowercase;
+  text-align: left;
+  color: rgb(61, 61, 61);
+  margin-left: .5em;
+  margin-top: .2em;
+  padding: 2px;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.category--item--price {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: .3em;
+}
+
+.category--item--btn button {
+    font-family: Mo;
+    border: none;
+    background: white;
+    border-radius: 1.9em;
+    width: 80%;
+    font-size: .6rem;
+    font-weight: bold;
+    color: rgb(107, 106, 106);
+    word-spacing: .2rem;
+    margin-bottom: 1em;
+    text-decoration: none;
+    padding: .8em;
+    text-transform: capitalize;
+    line-height: 1em;
+    letter-spacing: .3em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 555px) {
+    .item--wrap {
+        flex-basis: 220px;
+    }
+}
+
+@media only screen and (min-width: 590px) {
+    .item--wrap {
+        flex-basis: 250px;
+    }
+}

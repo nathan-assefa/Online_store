@@ -1,7 +1,7 @@
     {% extends "base.html" %}
 
     {% block content %}    
-    <div class="swiper new--cart" data-cart="{{ cart }}">
+    <div class="swiper new--cart swiper--for--landing" data-cart="{{ cart }}">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -54,22 +54,22 @@
     <div class="blue-container">
         <div class="container--2">
             <ul>
-                <li>
-                    <i class="fas fa-shoe-prints category-icon"></i>
-                    <span class="category-name">Shoes</span>
+		<li>
+                        <a href="/store/v1/category/shoe"><i class="fas fa-shoe-prints category-icon"></i></a>
+                        <span class="category-name">Shoes</span>
                 </li>
                 <li>
-                    <i class="fas fa-tshirt category-icon"></i>
-                    <span class="category-name">Dressings</span>
+                        <a href="/store/v1/category/dressings"><i class="fas fa-tshirt category-icon"></i></a>
+                        <span class="category-name">Dressings</span>
                 </li>
                 <li>
-                    <i class="fas fa-gem category-icon"></i>
-                    <span class="category-name">Jewelry</span>
+                        <a href="/store/v1/category/jewelry"><i class="fas fa-gem category-icon"></i></a>
+                        <span class="category-name">Jewelry</span>
                 </li>
                 <li>
-                    <i class="fas fa-laptop category-icon"></i>
-                    <span class="category-name">Tech Items</span>
-            </li>
+                        <a href="/store/v1/category/tech"><i class="fas fa-laptop category-icon"></i></a>
+                        <span class="category-name">Tech Items</span>
+                </li>
             </ul>
         </div>
     </div>

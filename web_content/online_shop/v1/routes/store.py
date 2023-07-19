@@ -14,23 +14,32 @@ from flask_login import (
     logout_user,
     current_user,
 )
+import uuid
 
 app_store = Blueprint('app_store', __name__, url_prefix='/store/v1')
 
 
 @app_store.route('/', strict_slashes=False)
 def landing_page():
-    return render_template('landing_page.html')
+    cache_id = str(uuid.uuid4())
+    return render_template('landing_page.html', cache_id=cache_id)
+
+
+@app_store.route('/about_us', strict_slashes=False)
+def about_us():
+    return render_template('about_us.html')
 
 
 @app_store.route('/cart', strict_slashes=False)
 def single_product():
+    cache_id = str(uuid.uuid4())
     cart_id = session['cart'].get('id')
-    return render_template('cart.html', cart=cart_id)
+    return render_template('cart.html', cart=cart_id, cache_id=cache_id)
 
 
 @app_store.route('/items', strict_slashes=False)
 def single_prodcuct():
+    cache_id = str(uuid.uuid4())
     products = storage.all(Product)
     products_data = []
 
@@ -48,18 +57,37 @@ def single_prodcuct():
             'id': product.id,
             })
     # Pass the data to the template
-    return render_template('all_product.html', products=products_data)
+    return render_template('all_product.html', products=products_data, cache_id=cache_id)
 
 
-@app_store.route('/order_page', strict_slashes=False)
-def order_page():
-    return render_template('try_landing_page.html')
+@app_store.route('/category/<category_name>', strict_slashes=False)
+def categories(category_name):
+    products = storage.all(Product)
+    products_data = []
+
+    for product in products.values():
+        if product.category.name == category_name:
+            if product.urls:
+                image = product.urls[1].link  # Select the first image
+            else:
+                image = None
+
+            products_data.append({
+                'name': product.name,
+                'image': image,
+                'description': product.description,
+                'price': product.price,
+                'id': product.id,
+                })
+    # Pass the data to the template
+    return render_template('categories.html', products=products_data)
 
 
 # Single Products Page
 @app_store.route('/item/<string:product_id>/', strict_slashes=False)
 @login_required
 def item(product_id):
+    cache_id = str(uuid.uuid4())
     product = storage.get(Product, product_id)
     products = storage.all(Product)
     product_data = {}
@@ -99,5 +127,6 @@ def item(product_id):
     # Pass the data to the template
     return render_template('single_product.html',
             product=product_data,
-            related_products=related_products_data
+            related_products=related_products_data,
+            cache_id=cache_id
             )
