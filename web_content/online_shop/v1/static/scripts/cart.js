@@ -14,6 +14,14 @@ $(document).ready(function() {
         clear_cart();
       });
 
+      $(".clear_cart").hover(
+    	function() {
+      		// Set the message you want to display
+      	  const message = "Delete items?";
+      	  // Show the tooltip with the message
+      	  $("#clear-cart-tooltip").text(message).addClass("active");
+      });
+
       load_cart_items();
 
       function add_to_cart(item, id_text) {
@@ -63,6 +71,7 @@ $(document).ready(function() {
             }),
             success: function(response) {
               console.log('New item inserted');
+	      load_cart_items();
             },
             error: function(xhr, status, error) {
               console.error(xhr.responseText);
@@ -96,6 +105,7 @@ $(document).ready(function() {
           dataType: 'json',
           success: function(response) {
             console.log('Cart cleared');
+	    load_cart_items();
           },
           error: function(xhr) {
             console.error(xhr.responseText);
