@@ -53,6 +53,10 @@ def single_prodcuct():
         len_options = len(sort_options)
         sort_key = sort_options[randint(0, len_options - 1)]
 
+        sort_options = ['name', 'price', 'id', 'created_at', 'updated_at']
+        len_options = len(sort_options)
+        sort_key = sort_options[randint(0, len_options - 1)]
+
         products_data.append({
             'name': product.name,
             'image': image,
@@ -74,7 +78,11 @@ def categories(category_name):
         if product.category.name == category_name:
             if product.urls:
                 url_length = len(product.urls)
+<<<<<<< HEAD
                 image = product.urls[randint(0, url_length - 1)].link  # Select the first image
+=======
+                image = product.urls[randint(0, url_length - 1)].link
+>>>>>>> c8fcf4c5c8cf3474f2ab0bc1ea5ab532a7e5d38e
             else:
                 image = None
 
