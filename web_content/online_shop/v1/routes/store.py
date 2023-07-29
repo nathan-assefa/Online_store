@@ -78,11 +78,7 @@ def categories(category_name):
         if product.category.name == category_name:
             if product.urls:
                 url_length = len(product.urls)
-<<<<<<< HEAD
-                image = product.urls[randint(0, url_length - 1)].link  # Select the first image
-=======
                 image = product.urls[randint(0, url_length - 1)].link
->>>>>>> c8fcf4c5c8cf3474f2ab0bc1ea5ab532a7e5d38e
             else:
                 image = None
 
