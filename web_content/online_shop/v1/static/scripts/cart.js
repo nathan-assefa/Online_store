@@ -6,7 +6,6 @@ $(document).ready(function() {
         const that = $("#" + id_text + "_id");
 	console.log(id_text)
         add_to_cart(that, id_text);
-	load_cart_items()
       });
 
       $(".clear_cart").on("click", function(e) {
@@ -63,6 +62,7 @@ $(document).ready(function() {
             }),
             success: function(response) {
               console.log('New item inserted');
+	      load_cart_items();
             },
             error: function(xhr, status, error) {
               console.error(xhr.responseText);
@@ -96,6 +96,7 @@ $(document).ready(function() {
           dataType: 'json',
           success: function(response) {
             console.log('Cart cleared');
+	    load_cart_items();
           },
           error: function(xhr) {
             console.error(xhr.responseText);

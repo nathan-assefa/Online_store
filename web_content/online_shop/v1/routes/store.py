@@ -6,6 +6,7 @@ from models.product import Product
 from models.category import Category
 from models.url import Url
 from flask import Flask, render_template, Blueprint, session
+from random import randint
 from flask_login import (
     UserMixin,
     login_user,
@@ -48,6 +49,9 @@ def single_prodcuct():
             image = product.urls[0].link  # Select the first image
         else:
             image = None
+        sort_options = ['name', 'price', 'id', 'created_at', 'updated_at']
+        len_options = len(sort_options)
+        sort_key = sort_options[randint(0, len_options - 1)]
 
         products_data.append({
             'name': product.name,
@@ -55,6 +59,7 @@ def single_prodcuct():
             'description': product.description,
             'price': product.price,
             'id': product.id,
+            'sort_key': sort_key
             })
     # Pass the data to the template
     return render_template('all_product.html', products=products_data, cache_id=cache_id)
@@ -68,7 +73,8 @@ def categories(category_name):
     for product in products.values():
         if product.category.name == category_name:
             if product.urls:
-                image = product.urls[1].link  # Select the first image
+                url_length = len(product.urls)
+                image = product.urls[randint(0, url_length - 1)].link  # Select the first image
             else:
                 image = None
 
