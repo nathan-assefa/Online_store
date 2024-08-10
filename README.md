@@ -2,6 +2,12 @@
 
 Welcome to the GebeyaHub Online Store repository! This repository contains the source code for an e-commerce web application.
 
+### Full Video
+
+| 🟢 Demo                                                           |
+| ----------------------------------------------------------------- |
+| [Online Market](https://youtu.be/KEqKstuX7OQ?si=ptdAq3pOh4Zrhq1-) |
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -62,7 +68,7 @@ The GebeyaHUB project came from our desire to demonstrate our abilities and appl
 **5. Update the database connection configuration in the config.py file:**
 
        SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/database_name'
-   
+
 Replace username, password, and database_name with your own MySQL database credentials.
 
 **6. Start the application:**
@@ -73,11 +79,10 @@ Once the application is up and running, you can access it in your web browser by
 
 ## Authors
 
-| Author | LinkedIn Account                           | GitHub Account                          |
-|-----------|--------------------------------------------|-----------------------------------------|
-| Nathan Assefa    | [Nathan's LinkedIn](https://www.linkedin.com/in/nathan-assefa-9ba017253/)     | [Nathan's GitHub](https://github.com/nathan-assefa)     |
-| Mahlet Seifu    | [Mahlet's LinkedIn](https://www.linkedin.com/in/mahlet-seifu-feleke) | [Mahlet's GitHub](https://github.com/Mahlet2123) |
-
+| Author        | LinkedIn Account                                                          | GitHub Account                                      |
+| ------------- | ------------------------------------------------------------------------- | --------------------------------------------------- |
+| Nathan Assefa | [Nathan's LinkedIn](https://www.linkedin.com/in/nathan-assefa-9ba017253/) | [Nathan's GitHub](https://github.com/nathan-assefa) |
+| Mahlet Seifu  | [Mahlet's LinkedIn](https://www.linkedin.com/in/mahlet-seifu-feleke)      | [Mahlet's GitHub](https://github.com/Mahlet2123)    |
 
 ## Contributing
 
